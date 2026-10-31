@@ -17,7 +17,7 @@
 1. 构建新的网页 ZIP，根目录必须包含 index.html、sw.js 和离线清单。
 2. 更新 release-package.json 中的 tag、ZIP SHA-256 和离线 release_id，并提交到 main。
 3. 创建对应版本的 GitHub Release，上传名为 ramu-pocket-web.zip 的资源包，再发布 Release。
-4. Actions 将验证 ZIP 和每个离线资源后部署；也可手动运行 Deploy Pocket Ramu。
+4. 在 Actions 中从 main 手动运行 Deploy Pocket Ramu，将验证 ZIP 和每个离线资源后部署。
 
 仓库 Settings → Pages → Source 需要选择 GitHub Actions。
 
