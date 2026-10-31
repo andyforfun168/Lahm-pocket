@@ -1,0 +1,47 @@
+name: Deploy Pocket Ramu
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - name: Download verified release package
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          EVENT_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          metadata = json.load(open('release-package.json'))
+          if os.environ.get('EVENT_TAG') and os.environ['EVENT_TAG'] != metadata['tag']:
+              raise SystemExit('Release tag does not match release-package.json')
+          subprocess.run(['gh', 'release', 'download', metadata['tag'], '--pattern', metadata['asset']], check=True)
+          subprocess.run(['python3', 'prepare_site.py', metadata['asset'], '_site'], check=True)
+          PY
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+      - name: Publish Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
