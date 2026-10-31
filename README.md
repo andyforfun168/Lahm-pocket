@@ -1,6 +1,8 @@
 # 口袋拉姆 · Pocket Ramu
 
-供个人体验的离线网页养成游戏，当前版本 0.14。
+供个人体验的离线网页养成游戏，当前版本 0.14.1。
+
+游玩网址：https://andyforfun168.github.io/ramu-pocket/
 
 ## 在 iPhone / iPad 使用
 
