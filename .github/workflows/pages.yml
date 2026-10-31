@@ -2,8 +2,6 @@ name: Deploy Pocket Ramu
 
 on:
   workflow_dispatch:
-  release:
-    types: [published]
 
 permissions:
   contents: read
@@ -28,13 +26,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
-          EVENT_TAG: ${{ github.event.release.tag_name }}
         run: |
           python3 - <<'PY'
-          import json, os, subprocess
+          import json, subprocess
           metadata = json.load(open('release-package.json'))
-          if os.environ.get('EVENT_TAG') and os.environ['EVENT_TAG'] != metadata['tag']:
-              raise SystemExit('Release tag does not match release-package.json')
           subprocess.run(['gh', 'release', 'download', metadata['tag'], '--pattern', metadata['asset']], check=True)
           subprocess.run(['python3', 'prepare_site.py', metadata['asset'], '_site'], check=True)
           PY
