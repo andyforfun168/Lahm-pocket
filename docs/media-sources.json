@@ -357,7 +357,7 @@
     "docs/media/app-icon.png": "e9583b61c3d0dac98378d7a66da0adf7ba0bcecca0941028b743f27ec1be3d37",
     "docs/media/butterfly.gif": "5d347a2d9c3cebff93b748e91d9e204b0fd9a441160102e83ad3b3b4c5a5e26e",
     "docs/media/butterfly.jpg": "5c4874add924eaa6fcc2d65428aaf17ca0fd099bd19409e55e36393a673caeb3",
-    "docs/media/cover.jpg": "227f54d5b8948c87109d38358cc1fabc868b248e2cfc5448e9e8ea0407eb9fa4",
+    "docs/media/cover.jpg": "51724b7395821909f942eed0696c342aa70a2d1e8e300487c5c8a54b9a3ac2e7",
     "docs/media/football.gif": "cc6cbf0340e8971e8ee98ed98b2abfcbf6d5dc91d89a8177df670fd65cfdb49c",
     "docs/media/football.jpg": "3a4dfb10144b5f56e09bef8cb228a534475da84811967975b86cff693f81cfd3",
     "docs/media/growing-up.png": "ef13c9a48421e13c02f6e4ba514f58592b126f95671d1d0cba22c21611a5e832",
@@ -370,9 +370,11 @@
     "docs/media/restaurant.jpg": "ac54af098e28f38e8efd73ad2adb4a660213bd8b62233024fd4214cfd45fc8e9",
     "docs/media/street-day-v21.png": "6257f048bf21745b64ea4cb2ce8fe8d04f551fbe35f4fabe8c709ef98b66fcad",
     "docs/media/street-evening-v21.png": "dbcc3ea1cae99cc1a96a9ea1beb03b2009f763e027c1bb46247e0373f70a6d52",
-    "docs/media/street-sunset-v21.png": "27b92ab393ea1e917f7771c6d0b3a624bf8a45def2ab76b5895b9ccd61aff8c5"
+    "docs/media/street-sunset-v21.png": "27b92ab393ea1e917f7771c6d0b3a624bf8a45def2ab76b5895b9ccd61aff8c5",
+    "docs/media/study-night-v21-1.jpg": "7b31fd58e4125960b4c2053db218f6f24b8f8f499635f6301d147a43e2011cf9",
+    "docs/media/study-sunset-v21-1.jpg": "bec76446aae1cd7066000cb7e7f61da7d3860a473dbf9caac33c04f795b076c5"
   },
-  "presentation_version": "20.2",
+  "presentation_version": "21.1",
   "original_game_art_and_music": "摩尔庄园页游",
   "asset_collection_reference": "Vinci-217/mole-baby (asset collection only; separate project)",
   "unchanged_animation_exports_reused_from": "V20.1 phone-proportion native Canvas exports",
