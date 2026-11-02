@@ -19,6 +19,7 @@ def prepare(archive, output):
     with zipfile.ZipFile(archive) as bundle:
         names = bundle.namelist()
         assert len(names) == len(set(names)), 'Duplicate ZIP paths'
+        assert not any('lab-' in p or p.endswith('pairing.json') or p.endswith('TEST-README.md') for p in names), 'Test build must never be deployed'
         assert sum(x.file_size for x in bundle.infolist()) < 1_000_000_000, 'Pages size limit exceeded'
         for entry in bundle.infolist():
             safe_path(entry.filename)
@@ -27,6 +28,9 @@ def prepare(archive, output):
             assert required in names, f'Missing root entry: {required}'
         manifest = json.loads(bundle.read('offline-manifest.json'))
         assert manifest['id'] == metadata['release_id'], 'Release identity mismatch'
+        allowed = {r['path'] for r in manifest['resources']} | {'sw.js', 'offline-manifest.json'}
+        assert set(names) == allowed, 'Undeclared files in normal release'
+        assert b'lab-entry' not in bundle.read('index.html'), 'Test entry is not allowed'
         total = 0
         for resource in manifest['resources']:
             safe_path(resource['path'])
