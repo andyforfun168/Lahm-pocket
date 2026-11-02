@@ -16,7 +16,7 @@
 
 ## 今天，学一点新本领
 
-![三系课程示例：火系第一节](https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/courses-v23-8.png)
+![三系课程示例：火系第一节](https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/courses-v23-8-fixed-sign.png)
 
 - 火、水、木各三节，每节三小时、永久习得两个法术，共18个变身法术。
 - 课程卡片聚焦当前可学的小节，点开明细查看说明；全系结业解锁对应元素形态。
@@ -28,6 +28,18 @@
 V23.8恢复28组缺失的物品动画，涵盖初、中、高级的部分食物、饮料、清洁用品与药水，以及超级、神力和三系的冰酷可乐。修正可乐身体染色并保留眼睛、描边和道具细节；中级追蝴蝶更新为新的演出，支持四种玩家配色。已满意的其他动画保留。
 
 神力及三系没有独立完整物品原片时，使用超级拉姆的完整动作，并在结束后恢复当前形态。另修正课堂书本的位置、变身烟雾覆盖及演出比例。
+
+<table><tr><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/snack-chocolate-v23-8.gif" alt="超级拉姆 · 巧克力豆的游戏原版动作"><br><b>一罐巧克力豆，吃得很认真</b><br>超级拉姆 · 巧克力豆</td><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/snack-watermelon-v23-8.gif" alt="中级拉姆 · 冰镇西瓜的游戏原版动作"><br><b>抱住西瓜，咬一口夏天</b><br>中级拉姆 · 冰镇西瓜</td></tr><tr><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/snack-bread-v23-8.gif" alt="超级拉姆 · 云朵面包的游戏原版动作"><br><b>软软的面包，慢慢尝</b><br>超级拉姆 · 云朵面包</td><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/snack-milk-v23-8.gif" alt="初级拉姆 · 麦香牛奶的游戏原版动作"><br><b>喝完这瓶，再发一会儿呆</b><br>初级拉姆 · 麦香牛奶</td></tr></table>
+
+巧克力豆、西瓜、云朵面包和麦香牛奶，给每一次照料添一点不同的小表情。
+
+## 和现实一起，从晨光走到星夜
+
+![小屋随现实当地时间变化的四种光景](https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/daylight-v23-8.png)
+
+小屋里的晨光、明亮的白昼、窗外的晚霞，再到安静的星夜，**场景会跟随设备当地的现实时间变化**。你在自己的时间里生活，拉姆也在同一片晨昏里陪着你。
+
+学院、餐厅和淘淘乐街也有各自的日夜光景。夜深后，庄园慢慢歇息；粉红小卖部仍留着一盏暖灯，让你替熟睡的拉姆准备明天的点心。旅行中的拉姆会在外扎营，早上再继续出发。
 
 ## 一起生活，收下一点纪念
 
