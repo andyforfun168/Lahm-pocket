@@ -1,5 +1,3 @@
-<p align="center"><img src="docs/media/app-icon.png" width="88" alt="口袋拉姆"></p>
-
 <h1 align="center">口袋拉姆 · Pocket Ramu</h1>
 <p align="center"><b>V22.2 · 小屋之外，藏着新的惊喜</b><br>把小小的陪伴带在身边，和拉姆一起过好普通的一天。</p>
 <p align="center"><a href="https://andyforfun168.github.io/ramu-pocket/"><b>🌱 开始游戏 →</b></a>　·　<a href="https://github.com/andyforfun168/ramu-pocket/releases/tag/v22.2">V22.2 版本公告</a>　·　<a href="#手机安装与更新">手机安装</a></p>
