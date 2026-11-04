@@ -1,4 +1,4 @@
-name: Deploy Pocket Ramu
+name: Deploy Pocket Lahm
 
 on:
   workflow_dispatch:
