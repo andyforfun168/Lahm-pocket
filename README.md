@@ -1,11 +1,27 @@
-<h1 align="center">口袋拉姆 · Pocket Ramu</h1>
+<h1 align="center">口袋拉姆 · Pocket Lahm</h1>
 <p align="center"><b>把小小的陪伴带在身边。</b></p>
-<p align="center"><a href="https://andyforfun168.github.io/ramu-pocket/"><b>🌱 开始游戏 →</b></a>　·　<a href="https://github.com/andyforfun168/ramu-pocket/releases/tag/v24.9">V24.9 新篇公告</a>　·　<a href="#手机安装与更新">安装与更新</a></p>
+<p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><b>🌱 开始游戏 →</b></a>　·　<a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v25.5">V25.5 更新公告</a>　·　<a href="#手机安装与更新">安装与更新</a></p>
 <p align="center">无需注册 · 可添加到主屏幕 · 完整下载后离线游玩</p>
 
-![口袋拉姆 V24.9 · 魔法阁楼开课啦](docs/media/cover-v24-9.jpg)
+![口袋拉姆 V24.9 · 魔法阁楼开课啦](docs/media/cover-v25-5.jpg)
 
 领养一只小拉姆，为它取个名字。准备一份点心，洗个香香的澡，陪它看看蝴蝶；累了，就安心睡一会儿。你忙自己的事，它在小屋里陪着你，日子慢慢过去，叶子也慢慢长大。
+
+## ✦ V25.5，把暖暖的小日子装进口袋
+
+圣诞小屋添了毛茸茸的小窝、复古地毯和围在身边的玩偶。白天晒晒太阳，傍晚点起壁炉，窗外下着雪，屋里总有一点暖光。
+
+![圣诞小屋 · 晨光、白昼、晚霞与夜晚](docs/media/christmas-four-times-v25-5.jpg)
+
+小屋风景可以用摩尔豆永久解锁：晨光书房在初级开放，溪畔树屋和圣诞小屋在中级开放。达到阶段后会显示“可以解锁了！”，先看一看，再决定把家布置成哪种模样。
+
+## ✦ 学会的本领，值得好好收藏
+
+语言、英文和魔术的结业证书，带着各自的小图标与蓝、粉、紫绶带，一起收进木质展示柜。学会魔术盒变身后，拉姆偶尔也会自己变个小魔术，给安静的小屋添一份惊喜。
+
+![三张结业证书与木质收藏柜](docs/media/certificate-cabinet-v25-5.jpg)
+
+待机时会追着蝴蝶看看、迈几步小步子，互动也能遇见新加入的五组玩耍动作。小屋里的七个动作可以自己挑，没选满时会随机补齐，想换一组就再挑一次。
 
 ## ✦ 新篇开启，魔法阁楼开课啦
 
@@ -13,21 +29,21 @@
 
 从语言、英文和魔法入门学起，再走进火、水、木三系课堂。**一节一节学会本领，也一点一点长成自己的模样。**
 
-![魔法阁楼 · 白昼、黄昏、星夜与熄灯后的深夜](docs/media/attic-four-times-v24-9.jpg)
+![魔法阁楼 · 白昼、黄昏、星夜与熄灯后的深夜](docs/media/attic-four-times-v25-5.jpg)
 
-白天，日光落在书页上；傍晚，窗外换成温柔晚霞。夜幕降临，法阵与水晶亮起；等到夜深，老师们也会离场，留下安静的阁楼，等明天再见。
+白天，日光落在书页上；傍晚，窗外换成温柔晚霞。夜幕降临，法阵与水晶亮起；等到夜深，老师们也会离场，魔法锅的锅身保持深夜暗色，紫色药水照亮锅口，周围木地板留着柔和的光晕，安静地等明天再见。
 
 ## ✦ 同一座学院，四时的温柔
 
 熟悉的树屋、校门和草地，从白昼的绿意，一路走到星夜的灯火。场景跟随设备当地时间变化，你过着自己的一天，拉姆也在同一片晨昏里生活。
 
-![拉姆学院 · 白昼、黄昏、星夜与熄灯后的深夜](docs/media/academy-four-times-v24-9.jpg)
+![拉姆学院 · 白昼、黄昏、星夜与熄灯后的深夜](docs/media/academy-four-times-v25-5.jpg)
 
 ## ✦ 把努力，变成第一张证书
 
 完成基础课后，去校长办公室找菩提大伯吧。葡萄也在那里，陪你收下这份肯定，把学会的小本领好好记进成长手册。
 
-![校长办公室 · 白天领取证书，深夜熄灯休息](docs/media/office-welcome-v24-9.jpg)
+![校长办公室 · 白天领取证书，深夜熄灯休息](docs/media/office-welcome-v25-5.jpg)
 
 已经结业的课程，还可以回来当小助教，陪别人学一会儿，攒一点摩尔豆。夜深了就先休息，明天还有新的小期待。
 
@@ -65,22 +81,24 @@
 
 ## 有些纪念，要一起发现
 
-<table><tr><td align="center" width="50%"><img src="docs/media/medal-birth-v23-8.svg" width="104" alt="诞生奖章，蓝色拉姆配色"><br><b>诞生奖章</b><br>把第一次见面的心意留下。</td><td align="center" width="50%"><img src="docs/media/medal-sleep-v23-8.svg" width="104" alt="睡饱饱奖章"><br><b>睡饱饱</b><br>好好休息，也值得被记住。</td></tr></table>
+<table><tr><td align="center" width="25%"><img src="docs/media/medal-birth-v25-5.svg" width="104" alt="诞生奖章，蓝色拉姆配色"><br><b>诞生奖章</b><br>把第一次见面的心意留下。</td><td align="center" width="25%"><img src="docs/media/medal-sleep-v25-5.svg" width="104" alt="睡饱饱奖章"><br><b>睡饱饱</b><br>好好休息，也值得被记住。</td><td align="center" width="25%"><img src="docs/media/medal-super-v25-5.svg" width="104" alt="超级拉姆奖章，三片金叶和蓝色拉姆"><br><b>超级拉姆奖章</b><br>三片金叶，纪念又一次长大。</td><td align="center" width="25%"><img src="docs/media/medal-god-v25-5.svg" width="104" alt="神力奖章，七片金叶、三色小球和蓝色拉姆"><br><b>神力奖章</b><br>把一起成长的日子，收成星光。</td></tr></table>
 
-诞生的心意，睡饱饱的小纪念。更多奖章留在陪伴与探索里，获得后可挑选最多三枚陈列在小屋。
+诞生的心意，睡饱饱的小纪念，还有三片金叶与七叶星光。奖章中的拉姆会跟随玩家的颜色；更多纪念留在陪伴与探索里，获得后可挑选最多三枚陈列在小屋。
 
 ## 手机安装与更新
 
-1. 用 iPhone / iPad 的 **Safari** 打开 [游戏网址](https://andyforfun168.github.io/ramu-pocket/)，选择“分享 → 添加到主屏幕”。
+1. 用 iPhone / iPad 的 **Safari** 打开 [游戏网址](https://andyforfun168.github.io/Lahm-pocket/)，选择“分享 → 添加到主屏幕”。
 2. 从图标进入，在“设置 → 离线下载与更新”下载完整资源。
 3. 看到离线就绪，就可以把拉姆装进口袋，离线也能陪伴。
+
+旧版主屏幕图标与 [原游戏入口](https://andyforfun168.github.io/ramu-pocket/) 继续可用。
 
 **已有拉姆？** 沿用原入口，进入 **设置 → 离线下载与更新 → 检查更新**，下载后选择 **保存进度并打开新版**。已有进度会保留，无需清除网站数据或重新添加图标。
 
 <details>
 <summary>下载与存档小提示</summary>
 
-完整离线资源约335.1 MiB，下载时保持页面在前台，中断后可以继续。若旧入口下载完成后仍显示“下载新版”，再检查一次更新即可刷新就绪状态。
+完整离线资源约387.8 MiB，下载时保持页面在前台，中断后可以继续。若旧入口下载完成后仍显示“下载新版”，再检查一次更新即可刷新就绪状态。
 
 存档保存在当前设备的浏览器或主屏幕入口中，不自动跨设备同步。更换设备、入口或清理网站数据前，请先在设置中导出备份。
 
