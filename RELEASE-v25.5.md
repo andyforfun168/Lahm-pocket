@@ -3,7 +3,7 @@
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><b>🌱 开始游戏 →</b></a>　·　<a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v25.5">V25.5 更新公告</a>　·　<a href="https://github.com/andyforfun168/Lahm-pocket#手机安装与更新">安装与更新</a></p>
 <p align="center">无需注册 · 可添加到主屏幕 · 完整下载后离线游玩</p>
 
-![口袋拉姆 V25.5 · 把冬日的温暖装进口袋](https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/cover-v25-5-cloud-bread.gif)
+![口袋拉姆 V25.5 · 把冬日的温暖装进口袋](https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/cover-v25-5-cloud-bread-red.gif)
 
 领养一只小拉姆，为它取个名字。准备一份点心，洗个香香的澡，陪它看看蝴蝶；累了，就安心睡一会儿。你忙自己的事，它在小屋里陪着你，日子慢慢过去，叶子也慢慢长大。
 
@@ -89,7 +89,7 @@
 
 ## 手机安装与更新
 
-[下载最新 V25.5 离线包](https://github.com/andyforfun168/Lahm-pocket/releases/download/v25.5/lahm-pocket-web-v25.5-updated.zip)。
+[下载最新 V25.5 离线包](https://github.com/andyforfun168/Lahm-pocket/releases/download/v25.5/lahm-pocket-web-v25.5-camping-fix.zip)。
 
 
 1. 用 iPhone / iPad 的 **Safari** 打开 [游戏网址](https://andyforfun168.github.io/Lahm-pocket/)，选择“分享 → 添加到主屏幕”。
