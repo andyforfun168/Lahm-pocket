@@ -3,7 +3,7 @@
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><b>🌱 开始游戏 →</b></a>　·　<a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v25.5">V25.5 更新公告</a>　·　<a href="https://github.com/andyforfun168/Lahm-pocket#手机安装与更新">安装与更新</a></p>
 <p align="center">无需注册 · 可添加到主屏幕 · 完整下载后离线游玩</p>
 
-![口袋拉姆 V25.5 · 把冬日的温暖装进口袋](https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/cover-v25-5-winter-original.jpg)
+![口袋拉姆 V25.5 · 把冬日的温暖装进口袋](https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/cover-v25-5-cloud-bread.gif)
 
 领养一只小拉姆，为它取个名字。准备一份点心，洗个香香的澡，陪它看看蝴蝶；累了，就安心睡一会儿。你忙自己的事，它在小屋里陪着你，日子慢慢过去，叶子也慢慢长大。
 
@@ -48,6 +48,8 @@
 <details>
 <summary>这次，还有这些小变化</summary>
 
+- 餐厅里的拉姆与餐盘比例更协调，洗澡物品说明在小屏幕上也能完整阅读。
+- 自动出游默认开启，随时可以在小屋中调整。
 - 学院、阁楼和办公室切换更流畅，画面比例统一。
 - 重进学院时，先回到基础课程表；课程卡可以点开查看详情。
 - 上课小贴士默认收起，领取证书与学会新本领时会有提醒。
@@ -56,6 +58,8 @@
 </details>
 
 ## 长大以后，魔法开始了
+
+成长目标现在更贴近日常照料的节奏：种子期需要积累 220 点，初级 2,500 点，中级和高级各 5,500 点阶段成长值。健康陪伴的时间要求保留，已长成的阶段与本阶段已积累的点数也会一起留下。超级拉姆继续通过火、水、木三系课程，向神力阶段迈进。
 
 ![火系、水系、木系与神力超级拉姆](https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/forms-v23-8.png)
 
@@ -84,6 +88,9 @@
 第一次见面的心意、睡饱后的美梦、旅行带回的足迹，还有连续七日的相伴，都能化作一枚小小纪念。更多徽章藏在陪伴与探索里，获得后可挑选最多三枚陈列在小屋。
 
 ## 手机安装与更新
+
+[下载最新 V25.5 离线包](https://github.com/andyforfun168/Lahm-pocket/releases/download/v25.5/lahm-pocket-web-v25.5-updated.zip)。
+
 
 1. 用 iPhone / iPad 的 **Safari** 打开 [游戏网址](https://andyforfun168.github.io/Lahm-pocket/)，选择“分享 → 添加到主屏幕”。
 2. 从图标进入，在“设置 → 离线下载与更新”下载完整资源。
