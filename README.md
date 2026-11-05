@@ -3,7 +3,7 @@
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><b>🌱 开始游戏 →</b></a>　·　<a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v25.5">V25.5 更新公告</a>　·　<a href="#手机安装与更新">安装与更新</a></p>
 <p align="center">无需注册 · 可添加到主屏幕 · 完整下载后离线游玩</p>
 
-![口袋拉姆 V25.5 · 把冬日的温暖装进口袋](docs/media/cover-v25-5-cloud-bread-red.gif)
+![口袋拉姆 · 蓝色中级拉姆在溪畔树屋喝麦香牛奶](docs/media/pocket-lahm-cover-matcha-milk-fixed.gif)
 
 领养一只小拉姆，为它取个名字。准备一份点心，洗个香香的澡，陪它看看蝴蝶；累了，就安心睡一会儿。你忙自己的事，它在小屋里陪着你，日子慢慢过去，叶子也慢慢长大。
 
@@ -25,6 +25,8 @@
 - 四款小游戏每局 5 摩尔豆，开局前会确认。每天共享 5 次达标奖励，每次 15 摩尔豆。翻翻乐会记录完成四对的最快用时。
 
 ## ✦ V25.5，把暖暖的小日子装进口袋
+
+![口袋拉姆 V25.5 · 把冬日的温暖装进口袋](docs/media/cover-v25-5-cloud-bread-red.gif)
 
 新增圣诞小屋背景，陪你迎接即将到来的圣诞。壁炉燃着暖光，窗边落着雪，小熊和礼物已经准备好，等你和拉姆一起，把冬日过成温暖的小日子。
 
