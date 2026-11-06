@@ -1,11 +1,30 @@
 <h1 align="center">口袋拉姆 · Pocket Lahm</h1>
 <p align="center"><b>把小小的陪伴带在身边。</b></p>
-<p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><b>🌱 开始游戏 →</b></a>　·　<a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v25.5">V25.5 更新公告</a>　·　<a href="#手机安装与更新">安装与更新</a></p>
+<p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><b>🌱 开始游戏 →</b></a>　·　<a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v26.0">V26.0 更新公告</a>　·　<a href="#手机安装与更新">安装与更新</a></p>
 <p align="center">无需注册 · 可添加到主屏幕 · 完整下载后离线游玩</p>
+
+![口袋拉姆 · 溪畔树屋里，蓝色拉姆正在吃巧克力豆](docs/media/pocket-lahm-postcard.gif)
+
+领养一只小拉姆，为它取个名字。准备一份点心，洗个香香的澡，陪它看看蝴蝶；累了，就安心睡一会儿。你忙自己的事，它在小屋里陪着你，日子慢慢过去，叶子也慢慢长大。
+
+## ✦ V26.0，回小屋，有封信等你
+
+[查看 V26.0 更新公告并下载](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v26.0)
+
+结业啦！去校长办公室找菩提大伯和葡萄，听听他们为中文、英文和魔法入门准备的三份不同祝贺。学会了本领，回小屋也能露一手。
+
+背上小包去庄园走走吧。傍晚的浆果丛林多了两只小兔，夜里的猪猪回了棚，雪山和海边留了一片星空。久一点没见，回小屋还能拆开拉姆的近况来信。
+
+挑好点心或浴液，就能直接看拉姆吃饭、洗澡。要是它有点不舒服，小屋也会提醒你去看看它。
+
+![傍晚的浆果丛林，溪边有两只小兔](docs/media/berry-dusk-v26-0.webp)
+
+<details>
+<summary>也看看以前的溪畔树屋封面</summary>
 
 ![口袋拉姆 · 蓝色中级拉姆在溪畔树屋喝麦香牛奶](docs/media/pocket-lahm-cover-matcha-milk-fixed.gif)
 
-领养一只小拉姆，为它取个名字。准备一份点心，洗个香香的澡，陪它看看蝴蝶；累了，就安心睡一会儿。你忙自己的事，它在小屋里陪着你，日子慢慢过去，叶子也慢慢长大。
+</details>
 
 ## ✦ V25.7，月光、远行与小小照料
 
@@ -25,6 +44,8 @@
 - 四款小游戏每局 5 摩尔豆，开局前会确认。每天共享 5 次达标奖励，每次 15 摩尔豆。翻翻乐会记录完成四对的最快用时。
 
 ## ✦ V25.5，把暖暖的小日子装进口袋
+
+[查看 V25.5 更新公告](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v25.5)
 
 ![口袋拉姆 V25.5 · 把冬日的温暖装进口袋](docs/media/cover-v25-5-cloud-bread-red.gif)
 
