@@ -1,3 +1,13 @@
+## 手记与弹窗补充更新
+
+四种颜色的小拉姆，都有更多话想说了。吃点心、喝饮料、洗香香、旅行和领奖等23类手记扩充为432种表达；会避开近期写过的句式，喝饮料也会用对说法。购物手记按实际商品记录。新手记跟随当前体色，旧记录留着原样。
+
+学院、餐厅和淘淘乐街的文案与场景间距已对齐。奖章、旅行来信、改名与确认说明的居中弹窗，统一为四角圆角矩形；长内容可以在框内滚动。改名仍会核对原名和新名，最终确认才使用药水。
+
+<p align="center"><img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/journal-blue-variety-v27-0.png" alt="蓝色拉姆用不同句式记录吃点心和喝饮料" width="460"></p>
+
+<p align="center"><img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/restaurant-spacing-v27-0.png" alt="餐厅标题、说明和场景标签间距对齐" width="420"></p>
+
 ## V27.0 体验修复
 
 - 奖章与改名的居中弹窗统一为四角圆润的矩形框，去掉顶部拖动条。
@@ -45,13 +55,13 @@
 
 ### 下载
 
-下方 `pocket-lahm-web-v27.0-rounded-panels-fix.zip` 为本次最新完整正常游玩版，包含离线资源。其余附件保留为先前版本。直接游玩请用上方游戏入口。
+下方 `pocket-lahm-web-v27.0-journal-layout-update.zip` 为本次最新完整正常游玩版，包含离线资源。其余附件保留为先前版本。直接游玩请用上方游戏入口。
 
 <details>
 <summary>版本校验与体验验证</summary>
 
-构建 `r19e879a16291350c19ef2b2d`；1391 项离线资源。正常版附件 SHA-256：`0fa659bcf21b88cd52b01cf8523fa40e0809534330cadb5b48e5289acb826567`。
+构建 `rdf970da306b7c828bc0adead`；1391 项离线资源。正常版附件 SHA-256：`5f242aa455ce94a25ab3d9c5a563133ae34a05d8b9b3b2a3606b019e662d6cb9`。
 
-67 组 JavaScript、32 项 Python 检查和 57 次模块语法检查通过。浏览器手机尺寸响应与旧版对照、四游戏提示与实际离线升级流程已验证；实体 iPhone 尚未实测。
+68 组 JavaScript、32 项 Python 检查和 57 次模块语法检查通过。浏览器手机尺寸响应与旧版对照、四游戏提示与实际离线升级流程已验证；实体 iPhone 尚未实测。
 
 </details>
