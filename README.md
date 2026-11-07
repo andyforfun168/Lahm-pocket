@@ -6,7 +6,28 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v26.0">V26.0 更新公告</a>　 ·　 <a href="#手机安装与更新">手机安装与更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v27.0">V27.0 更新公告</a>　 ·　 <a href="#手机安装与更新">手机安装与更新</a></p>
+
+## ✦ V27.0，小屋的新手记
+
+[查看 V27.0 更新公告与下载](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v27.0)
+
+小屋添了几枚淡彩书签，日常陪伴、旅行和小任务更容易找到。喜欢熟悉的叶绿色，也能在「设置 → 小屋主题」切回经典小屋；新玩家第一次查看主题后，小红点就会收好。
+
+<p align="center"><img src="docs/media/home-bookmarks-v27-0.png" alt="淡彩书签区分今日陪伴与任务册" width="300"> <img src="docs/media/home-themes-v27-0.png" alt="设置里可切换经典小屋与书签页主题" width="300"></p>
+
+**今天，想和你一起做四件小事。** 长大后的拉姆每天有两件普通任务、一趟指定目的地旅行和一则购物小故事。去牧场坐坐，或替葡萄准备一瓶课间牛奶；购买故事里的物品就算完成，无需额外送礼。每日和每周各有 10 条目的地、10 条购物故事，分类展示一轮后重新洗牌。种子期保留独立的日常小约定。
+
+**这次，让拉姆自己记下心情。** 红色热情开朗，黄色勇敢体贴，蓝色冷酷耍帅，粉色温柔可爱。同一件小事，也有它自己的说法；新手记跟随当前体色，过去写下的那一页保留原来的语气。
+
+| 睡饱饱 Plus | 足球小子 | 天下第一好 |
+| :---: | :---: | :---: |
+| <img src="docs/media/medal-sleep-plus-v27-0.svg" alt="睡饱饱 Plus 奖章，数字3" width="110"> | <img src="docs/media/medal-football-kid-v27-0.svg" alt="足球小子圆奖牌" width="110"> | <img src="docs/media/medal-best-friend-v27-0.svg" alt="天下第一好心形奖章" width="110"> |
+| 留住三次睡了个大爽觉 | 一百次手动踢球，或点球累计一百分 | 一百次手动摸摸的小心意 |
+
+获得奖章会亮起红点，也会留下一篇小屋手记。旅行来信和单篇见闻在屏幕中央展开，稀有明信片染上浅紫底；轻点明信片下半部就能读信，听过后再点按钮即可合上。
+
+四款小游戏提示更清楚，小卖部多了一枚手绘「50% off」小吊牌。改名药水首瓶 500 豆，之后每瓶 5000 豆；见面心意是 20 豆，完成三项照料还有 30 豆。设置里也能一键开启或停止音乐。
 
 ## ✦ V26.0，回小屋，有封信等你
 
