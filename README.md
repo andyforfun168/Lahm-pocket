@@ -2,7 +2,7 @@
 
 <h1 align="center">口袋拉姆 · Pocket Lahm</h1>
 
-<p align="center">小屋里，有个小家伙在等你。<br>吃点心、去旅行，把日子慢慢记进手记。</p>
+<p align="center">小屋里，有个小家伙在等你。<br>吃点心、去旅行，把日子慢慢记进手记</p>
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
