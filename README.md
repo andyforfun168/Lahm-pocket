@@ -1,11 +1,12 @@
+<a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/pocket-lahm-postcard.gif" alt="口袋拉姆，溪畔树屋里的小日常" width="100%"></a>
+
 <h1 align="center">口袋拉姆 · Pocket Lahm</h1>
-<p align="center"><b>把小小的陪伴带在身边。</b></p>
-<p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><b>🌱 开始游戏 →</b></a>　·　<a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v26.0">V26.0 更新公告</a>　·　<a href="#手机安装与更新">安装与更新</a></p>
-<p align="center">无需注册 · 可添加到主屏幕 · 完整下载后离线游玩</p>
 
-![口袋拉姆 · 溪畔树屋里，蓝色拉姆正在吃巧克力豆](docs/media/pocket-lahm-postcard.gif)
+<p align="center">小屋里，有个小家伙在等你。<br>吃点心、去旅行，把日子慢慢记进手记。</p>
 
-领养一只小拉姆，为它取个名字。准备一份点心，洗个香香的澡，陪它看看蝴蝶；累了，就安心睡一会儿。你忙自己的事，它在小屋里陪着你，日子慢慢过去，叶子也慢慢长大。
+<p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
+
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v26.0">V26.0 更新公告</a>　 ·　 <a href="#手机安装与更新">手机安装与更新</a></p>
 
 ## ✦ V26.0，回小屋，有封信等你
 
@@ -139,7 +140,7 @@
 <details>
 <summary>下载与存档小提示</summary>
 
-完整离线资源约387.8 MiB，下载时保持页面在前台，中断后可以继续。若旧入口下载完成后仍显示“下载新版”，再检查一次更新即可刷新就绪状态。
+完整离线包大小以游戏内显示为准。下载时保持页面在前台，中断后可以继续。首次下载完成后，点“下载好了，进入游戏”；更新完成后，点“保存进度并打开新版”。
 
 存档保存在当前设备的浏览器或主屏幕入口中，不自动跨设备同步。更换设备、入口或清理网站数据前，请先在设置中导出备份。
 
