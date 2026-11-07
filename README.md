@@ -12,7 +12,9 @@
 
 [查看 V27.0 更新公告与下载](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v27.0)
 
-小屋添了几枚淡彩书签，日常陪伴、旅行和小任务更容易找到。喜欢熟悉的叶绿色，也能在「设置 → 小屋主题」切回经典小屋；新玩家第一次查看主题后，小红点就会收好。
+**V27.0 体验修复已补充：** 更新公告不再被重复下载引导盖住；新增设置有独立红点，旅行小贴士与来信、稀有见闻、奖章分别提醒。中级拉姆喝雪顶椰汁前会先向左走到边界，也补好了身体底部的颜色。
+
+小屋添了几枚淡彩书签，日常陪伴、旅行和小任务更容易找到。喜欢熟悉的叶绿色，也能在「设置 → 小屋主题」切回经典小屋；新老玩家都能通过红点找到新设置，查看后小红点就会收好。
 
 <p align="center"><img src="docs/media/home-bookmarks-v27-0.png" alt="淡彩书签区分今日陪伴与任务册" width="300"> <img src="docs/media/home-themes-v27-0.png" alt="设置里可切换经典小屋与书签页主题" width="300"></p>
 
@@ -20,10 +22,14 @@
 
 **这次，让拉姆自己记下心情。** 红色热情开朗，黄色勇敢体贴，蓝色冷酷耍帅，粉色温柔可爱。同一件小事，也有它自己的说法；新手记跟随当前体色，过去写下的那一页保留原来的语气。
 
+| 番茄红 · 热情开朗 | 奶油黄 · 勇敢体贴 | 天空蓝 · 冷酷耍帅 | 莓莓粉 · 温柔可爱 |
+| :---: | :---: | :---: | :---: |
+| <img src="docs/media/middle-red-wave-v27-0.png" alt="红色中级拉姆招手" width="130"> | <img src="docs/media/middle-yellow-wave-v27-0.png" alt="黄色中级拉姆招手" width="130"> | <img src="docs/media/middle-blue-wave-v27-0.png" alt="蓝色中级拉姆招手" width="130"> | <img src="docs/media/middle-pink-wave-v27-0.png" alt="粉色中级拉姆招手" width="130"> |
+
+
 | 睡饱饱 Plus | 足球小子 | 天下第一好 |
 | :---: | :---: | :---: |
 | <img src="docs/media/medal-sleep-plus-v27-0.svg" alt="睡饱饱 Plus 奖章，数字3" width="110"> | <img src="docs/media/medal-football-kid-v27-0.svg" alt="足球小子圆奖牌" width="110"> | <img src="docs/media/medal-best-friend-v27-0.svg" alt="天下第一好心形奖章" width="110"> |
-| 留住三次睡了个大爽觉 | 一百次手动踢球，或点球累计一百分 | 一百次手动摸摸的小心意 |
 
 获得奖章会亮起红点，也会留下一篇小屋手记。旅行来信和单篇见闻在屏幕中央展开，稀有明信片染上浅紫底；轻点明信片下半部就能读信，听过后再点按钮即可合上。
 
