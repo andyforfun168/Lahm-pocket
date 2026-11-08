@@ -6,7 +6,41 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v27.0">V27.0 更新公告</a>　 ·　 <a href="#手机安装与更新">手机安装与更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.0">V28.0 更新公告</a>　 ·　 <a href="#手机安装与更新">手机安装与更新</a></p>
+
+## ✦ V28.0，把小风景珍藏起来
+
+**给每一种颜色的小拉姆，一本自己的织布收藏册。** 小屋与手记里的入口换成实体小册子：细细的布纹、撞色缝线和小布贴，跟随拉姆当前体色。轻点图标先看封面，再点封面翻开。
+
+<table>
+<tr>
+<td width="50%" align="center"><img src="docs/media/collection-book-red-v28.webp" alt="番茄红织布见闻收藏册，小屋入口同款" width="140"><br><b>番茄红</b></td>
+<td width="50%" align="center"><img src="docs/media/collection-book-yellow-v28.webp" alt="奶油黄织布见闻收藏册，小屋入口同款" width="140"><br><b>奶油黄</b></td>
+</tr>
+<tr>
+<td width="50%" align="center"><img src="docs/media/collection-book-blue-v28.webp" alt="天空蓝织布见闻收藏册，小屋入口同款" width="140"><br><b>天空蓝</b></td>
+<td width="50%" align="center"><img src="docs/media/collection-book-pink-v28.webp" alt="莓莓粉织布见闻收藏册，小屋入口同款" width="140"><br><b>莓莓粉</b></td>
+</tr>
+</table>
+
+每页四张旅行卡，最多十页，特别的小风景会优先收好；再次遇见同一条珍藏见闻，会换成最新时刻的风景。完整见闻汇总一直保留。还在小花盆里的拉姆也有一本空册子，可以先把期待收进去。
+
+**还有一些更特别的黄金见闻，藏在熟悉的小路上。** 先留一点神秘，等拉姆亲自讲给你听。
+
+**轻度陪伴，也能稳稳长大。** 每健康陪伴 1 小时自动获得 10 点成长值，离线也会累计；高级到超级所需成长值降为 4,000，其他成长、陪伴时间与课程条件保持。旧玩家保留已长成的阶段与原有成长，并按可靠记录一次补足当前阶段；已有成长更高时完整保留，不重复叠加。
+
+**把字调到舒服的大小。** 设置新增「文字大小」的标准／较大两档；任务说明和陪伴卡更易读。餐厅换上手写木牌，今日排班一眼能看清。手记先展示最新三条纪念和最近四张旅行卡，早些的纪念可以展开，更多风景留在收藏册。
+
+<table>
+<tr>
+<td width="50%" align="center" valign="top"><img src="docs/media/binder-empty-v28-0.png" alt="V28.0 四宫格收藏册空页，等待小风景" width="100%"></td>
+<td width="50%" align="center" valign="top"><img src="docs/media/reading-settings-v28-0.png" alt="设置中可选择标准或较大文字" width="100%"></td>
+</tr>
+</table>
+
+**原来的陪伴，完整带进新版。** 继续使用原入口，成长、背包、课程、奖章和手记都会保留。每天凌晨 4 点后的首次上线检查版本，发现更新会居中提醒；下载完成选择「保存进度并打开新版」，进入后即可查看更新说明。新增设置会用独立红点指路。
+
+[查看 V28.0 更新公告与下载](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.0)
 
 ## ✦ V27.0，小屋的新手记
 
@@ -22,9 +56,12 @@
 
 学院、餐厅和淘淘乐街的文案与场景间距已对齐。奖章、旅行来信、改名与确认说明的居中弹窗，统一为四角圆角矩形；长内容可以在框内滚动。改名仍会核对原名和新名，最终确认才使用药水。
 
-<p align="center"><img src="docs/media/journal-blue-variety-v27-0.png" alt="蓝色拉姆用不同句式记录吃点心和喝饮料" width="460"></p>
-
-<p align="center"><img src="docs/media/restaurant-spacing-v27-0.png" alt="餐厅标题、说明和场景标签间距对齐" width="420"></p>
+<table>
+<tr>
+<td width="50%" align="center" valign="top"><img src="docs/media/journal-blue-variety-v27-0.png" alt="蓝色拉姆用不同句式记录吃点心和喝饮料" width="100%"></td>
+<td width="50%" align="center" valign="top"><img src="docs/media/restaurant-spacing-v27-0.png" alt="餐厅标题、说明和场景标签间距对齐" width="100%"></td>
+</tr>
+</table>
 
 **排版补充修复：** 居中的奖章、改名弹窗改为四角圆润的矩形框；今日陪伴的三项照料圆圈与文字对齐。
 
@@ -34,7 +71,12 @@
 
 小屋添了几枚淡彩书签，日常陪伴、旅行和小任务更容易找到。喜欢熟悉的叶绿色，也能在「设置 → 小屋主题」切回经典小屋；新老玩家都能通过红点找到新设置，查看后小红点就会收好。
 
-<p align="center"><img src="docs/media/home-bookmarks-v27-0.png" alt="淡彩书签区分今日陪伴与任务册" width="300"> <img src="docs/media/home-themes-v27-0.png" alt="设置里可切换经典小屋与书签页主题" width="300"></p>
+<table>
+<tr>
+<td width="50%" align="center" valign="top"><img src="docs/media/home-bookmarks-v27-0.png" alt="淡彩书签区分今日陪伴与任务册" width="100%"></td>
+<td width="50%" align="center" valign="top"><img src="docs/media/home-themes-v27-0.png" alt="设置里可切换经典小屋与书签页主题" width="100%"></td>
+</tr>
+</table>
 
 **今天，想和你一起做四件小事。** 长大后的拉姆每天有两件普通任务、一趟指定目的地旅行和一则购物小故事。去牧场坐坐，或替葡萄准备一瓶课间牛奶；购买故事里的物品就算完成，无需额外送礼。每日和每周各有 10 条目的地、10 条购物故事，分类展示一轮后重新洗牌。种子期保留独立的日常小约定。
 
@@ -125,9 +167,12 @@
 
 熟悉的树屋、校门和草地，从白昼的绿意，一路走到星夜的灯火。场景跟随设备当地时间变化，你过着自己的一天，拉姆也在同一片晨昏里生活。
 
-![拉姆学院的一角 · 游戏原图](docs/media/academy-glimpse-v25-5.png)
-
-![夜灯亮起，拉姆学院依旧热闹 · 游戏原图](docs/media/academy-evening-v26-0.png)
+<table>
+<tr>
+<td width="50%" align="center" valign="top"><img src="docs/media/academy-glimpse-v25-5.png" alt="拉姆学院的一角 · 游戏原图" width="100%"></td>
+<td width="50%" align="center" valign="top"><img src="docs/media/academy-evening-v26-0.png" alt="夜灯亮起，拉姆学院依旧热闹 · 游戏原图" width="100%"></td>
+</tr>
+</table>
 
 ## ✦ 把努力，变成第一张证书
 
@@ -149,7 +194,7 @@
 
 ## 长大以后，魔法开始了
 
-成长目标现在更贴近日常照料的节奏：种子期需要积累 220 点，初级 2,500 点，中级和高级各 5,500 点阶段成长值。健康陪伴的时间要求保留，已长成的阶段与本阶段已积累的点数也会一起留下。超级拉姆继续通过火、水、木三系课程，向神力阶段迈进。
+成长目标更贴近日常照料的节奏：每健康陪伴 1 小时自动获得 10 点成长值，离线也会累计，单次离线最多结算 24 小时。种子期需要积累 220 点，初级 2,500 点，中级 5,500 点，高级到超级改为 4,000 点阶段成长值。健康陪伴的时间与课程要求保留；已长成的阶段、本阶段原有成长和过去的记录都会留下。超级拉姆继续通过火、水、木三系课程，向神力阶段迈进。
 
 ![火系、水系、木系与神力超级拉姆](docs/media/forms-v23-8.png)
 
@@ -185,7 +230,7 @@
 
 **从旧入口搬家？** 先在旧图标中进入“设置 → 导出备份”保存进度，再用 Safari 打开上方的新游戏网址，导入备份并重新添加到主屏幕。首次从新图标进入后，请确认拉姆和进度已正确导入。
 
-以后更新时，在“设置 → 离线下载与更新”检查更新，下载后选择“保存进度并打开新版”。
+从 V28.0 起，每天凌晨 4 点后的首次上线会顺便检查版本，发现新版会在屏幕中央提醒；暂不更新后，次日仍会提醒尚未安装的新版本。也可随时在“设置 → 离线下载与更新”手动检查，下载后选择“保存进度并打开新版”。更新完成会说明这次更新了什么，同一大版本的更新说明会累计保留。沿用原来的游戏入口即可继续旧存档，无需清除网站数据。
 <details>
 <summary>下载与存档小提示</summary>
 
