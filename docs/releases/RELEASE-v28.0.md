@@ -4,16 +4,12 @@
 
 给每一种颜色的小拉姆，一本自己的织布收藏册。细细的布纹、撞色缝线、风景布贴，都是小屋入口的同款小册子。
 
-<table>
-<tr>
-<td width="50%" align="center"><img src="docs/media/collection-book-red-v28.webp" alt="番茄红织布见闻收藏册，小屋入口同款" width="140"><br><b>番茄红</b></td>
-<td width="50%" align="center"><img src="docs/media/collection-book-yellow-v28.webp" alt="奶油黄织布见闻收藏册，小屋入口同款" width="140"><br><b>奶油黄</b></td>
-</tr>
-<tr>
-<td width="50%" align="center"><img src="docs/media/collection-book-blue-v28.webp" alt="天空蓝织布见闻收藏册，小屋入口同款" width="140"><br><b>天空蓝</b></td>
-<td width="50%" align="center"><img src="docs/media/collection-book-pink-v28.webp" alt="莓莓粉织布见闻收藏册，小屋入口同款" width="140"><br><b>莓莓粉</b></td>
-</tr>
-</table>
+<p align="center">
+<img src="../media/collection-book-red-v28.webp" alt="番茄红织布见闻收藏册，小屋入口同款" width="140">
+<img src="../media/collection-book-yellow-v28.webp" alt="奶油黄织布见闻收藏册，小屋入口同款" width="140">
+<img src="../media/collection-book-blue-v28.webp" alt="天空蓝织布见闻收藏册，小屋入口同款" width="140">
+<img src="../media/collection-book-pink-v28.webp" alt="莓莓粉织布见闻收藏册，小屋入口同款" width="140">
+</p>
 
 轻点图标先看封面，再点一下翻开。每页四张，最多十页；特别的风景优先收好，完整见闻汇总一直保留。还在小花盆里的小拉姆，也能先拥有一本空册子。
 
@@ -31,8 +27,8 @@
 
 <table>
 <tr>
-<td width="50%" align="center" valign="top"><img src="docs/media/binder-empty-v28-0.png" alt="四宫格收藏册空页" width="100%"></td>
-<td width="50%" align="center" valign="top"><img src="docs/media/reading-settings-v28-0.png" alt="文字大小设置" width="100%"></td>
+<td width="50%" align="center" valign="top"><img src="../media/binder-empty-v28-0.png" alt="四宫格收藏册空页" width="100%"></td>
+<td width="50%" align="center" valign="top"><img src="../media/reading-settings-v28-0.png" alt="文字大小设置" width="100%"></td>
 </tr>
 </table>
 
@@ -44,6 +40,10 @@
 
 在「设置 → 离线下载与更新」检查并下载，完成后选择「保存进度并打开新版」。进入新版会显示更新说明，不会再被重复下载完成提示盖住。V28.0 起，每天凌晨 4 点后的首次上线检查一次版本；发现新版本会居中提醒，暂不更新后次日仍会再提示。更新介绍保留整个 28 系列的新增内容，下个大版本再开启新的一页。
 
+## 本次补充修复
+
+有卡、空卡和封面采用一致尺寸，翻页时收藏册不再忽长忽短；风景卡保留空卡位的宽松比例。原存档与收集进度继续保留。
+
 ## 下载
 
-下方 `pocket-lahm-web-v28.0.zip` 是包含离线资源的正常游玩版。直接游玩请使用上方游戏入口。
+当前正常游玩版请选择 `pocket-lahm-web-v28.0-binder-fix.zip`，包含完整离线资源与卡册尺寸修复。原始 V28.0 包继续保留，作为历史下载。直接游玩请使用上方游戏入口。
