@@ -6,7 +6,7 @@
 
 [**🌱 开始游戏 →**](https://andyforfun168.github.io/ramu-pocket/)　·　[玩法与画面](https://github.com/andyforfun168/ramu-pocket#readme)
 
-![V23.8新增形态示例](https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/forms-v23-8.png)
+![V23.8新增形态示例](https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/../media/forms-v23-8.png)
 
 ## 每一次长大，都有新的模样
 
@@ -16,7 +16,7 @@
 
 ## 今天，学一点新本领
 
-![三系课程示例：火系第一节](https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/courses-v23-8-fixed-sign.png)
+![三系课程示例：火系第一节](https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/../media/courses-v23-8-fixed-sign.png)
 
 - 火、水、木各三节，每节三小时、永久习得两个法术，共18个变身法术。
 - 课程卡片聚焦当前可学的小节，点开明细查看说明；全系结业解锁对应元素形态。
@@ -29,13 +29,13 @@ V23.8恢复28组缺失的物品动画，涵盖初、中、高级的部分食物�
 
 神力及三系没有独立完整物品原片时，使用超级拉姆的完整动作，并在结束后恢复当前形态。另修正课堂书本的位置、变身烟雾覆盖及演出比例。
 
-<table><tr><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/snack-chocolate-v23-8.gif" alt="超级拉姆 · 巧克力豆的游戏原版动作"><br><b>一罐巧克力豆，吃得很认真</b><br>超级拉姆 · 巧克力豆</td><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/snack-watermelon-v23-8.gif" alt="中级拉姆 · 冰镇西瓜的游戏原版动作"><br><b>抱住西瓜，咬一口夏天</b><br>中级拉姆 · 冰镇西瓜</td></tr><tr><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/snack-bread-v23-8.gif" alt="超级拉姆 · 云朵面包的游戏原版动作"><br><b>软软的面包，慢慢尝</b><br>超级拉姆 · 云朵面包</td><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/snack-milk-v23-8.gif" alt="初级拉姆 · 麦香牛奶的游戏原版动作"><br><b>喝完这瓶，再发一会儿呆</b><br>初级拉姆 · 麦香牛奶</td></tr></table>
+<table><tr><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/../media/snack-chocolate-v23-8.gif" alt="超级拉姆 · 巧克力豆的游戏原版动作"><br><b>一罐巧克力豆，吃得很认真</b><br>超级拉姆 · 巧克力豆</td><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/../media/snack-watermelon-v23-8.gif" alt="中级拉姆 · 冰镇西瓜的游戏原版动作"><br><b>抱住西瓜，咬一口夏天</b><br>中级拉姆 · 冰镇西瓜</td></tr><tr><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/../media/snack-bread-v23-8.gif" alt="超级拉姆 · 云朵面包的游戏原版动作"><br><b>软软的面包，慢慢尝</b><br>超级拉姆 · 云朵面包</td><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/../media/snack-milk-v23-8.gif" alt="初级拉姆 · 麦香牛奶的游戏原版动作"><br><b>喝完这瓶，再发一会儿呆</b><br>初级拉姆 · 麦香牛奶</td></tr></table>
 
 巧克力豆、西瓜、云朵面包和麦香牛奶，给每一次照料添一点不同的小表情。
 
 ## 和现实一起，从晨光走到星夜
 
-![小屋随现实当地时间变化的四种光景](https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/daylight-v23-8.png)
+![小屋随现实当地时间变化的四种光景](https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/../media/daylight-v23-8.png)
 
 小屋里的晨光、明亮的白昼、窗外的晚霞，再到安静的星夜，**场景会跟随设备当地的现实时间变化**。你在自己的时间里生活，拉姆也在同一片晨昏里陪着你。
 
@@ -43,7 +43,7 @@ V23.8恢复28组缺失的物品动画，涵盖初、中、高级的部分食物�
 
 ## 一起生活，收下一点纪念
 
-<table><tr><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/medal-birth-v23-8.svg" width="104" alt="诞生奖章"><br><b>诞生奖章</b><br>第一次见面的心意。</td><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/medal-sleep-v23-8.svg" width="104" alt="睡饱饱奖章"><br><b>睡饱饱</b><br>好好休息的小纪念。</td></tr></table>
+<table><tr><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/../media/medal-birth-v23-8.svg" width="104" alt="诞生奖章"><br><b>诞生奖章</b><br>第一次见面的心意。</td><td align="center" width="50%"><img src="https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/../media/medal-sleep-v23-8.svg" width="104" alt="睡饱饱奖章"><br><b>睡饱饱</b><br>好好休息的小纪念。</td></tr></table>
 
 两枚日常奖章作为介绍，更多纪念继续留在游戏里探索；获得后可挑选最多三枚陈列在小屋。
 
