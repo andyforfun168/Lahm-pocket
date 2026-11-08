@@ -1,6 +1,6 @@
 # 口袋拉姆 V21.0
 
-![口袋拉姆 V21.0](docs/media/cover.jpg)
+![口袋拉姆 V21.0](../media/cover.jpg)
 
 ## V21.0 更新内容
 
@@ -23,6 +23,6 @@
 
 ## 淘淘乐街
 
-![淘淘乐街白天](docs/media/street-day-v21.png)
+![淘淘乐街白天](../media/street-day-v21.png)
 
-<table><tr><td><img src="docs/media/street-sunset-v21.png" alt="黄昏街道"></td><td><img src="docs/media/street-evening-v21.png" alt="夜晚街道"></td></tr></table>
+<table><tr><td><img src="../media/street-sunset-v21.png" alt="黄昏街道"></td><td><img src="../media/street-evening-v21.png" alt="夜晚街道"></td></tr></table>
