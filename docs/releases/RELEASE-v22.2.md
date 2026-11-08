@@ -6,7 +6,7 @@
 
 [**🌱 开始游戏 →**](https://andyforfun168.github.io/ramu-pocket/)　·　[玩法与动图](https://github.com/andyforfun168/ramu-pocket#readme)
 
-![口袋拉姆的小屋](https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/cover.jpg)
+![口袋拉姆的小屋](https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/../media/cover.jpg)
 
 ## ✨ 这一回的惊喜
 
@@ -16,7 +16,7 @@
 
 **把惊喜留给相处的日子。** 更多精美奖章等待你和拉姆一起集齐、搜寻～获得后才会展示它背后的故事，也可以挑三枚陈列在小屋。
 
-![淘淘乐街](https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/docs/media/street-v22-2.webp)
+![淘淘乐街](https://raw.githubusercontent.com/andyforfun168/ramu-pocket/main/../media/street-v22-2.webp)
 
 ## 🛠 相比 V21.1 的调整与修复
 
