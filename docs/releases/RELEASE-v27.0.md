@@ -4,7 +4,7 @@
 
 旅行来信、阅读、改名药水提示、课程详情与更新说明等弹窗，底部独立按钮已通栏居中；双按钮确认也排成等宽两列。旅行模块原有的行距、卡片高度和按钮位置保持原样。
 
-<p align="center"><img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/travel-collection-entry-v27-0.png" alt="旅行模块右侧的见闻收藏册图案入口" width="360"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/../media/travel-collection-entry-v27-0.png" alt="旅行模块右侧的见闻收藏册图案入口" width="360"></p>
 
 ## 手记与弹窗补充更新
 
@@ -12,9 +12,9 @@
 
 学院、餐厅和淘淘乐街的文案与场景间距已对齐。奖章、旅行来信、改名与确认说明的居中弹窗，统一为四角圆角矩形；长内容可以在框内滚动。改名仍会核对原名和新名，最终确认才使用药水。
 
-<p align="center"><img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/journal-blue-variety-v27-0.png" alt="蓝色拉姆用不同句式记录吃点心和喝饮料" width="460"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/../media/journal-blue-variety-v27-0.png" alt="蓝色拉姆用不同句式记录吃点心和喝饮料" width="460"></p>
 
-<p align="center"><img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/restaurant-spacing-v27-0.png" alt="餐厅标题、说明和场景标签间距对齐" width="420"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/../media/restaurant-spacing-v27-0.png" alt="餐厅标题、说明和场景标签间距对齐" width="420"></p>
 
 ## V27.0 体验修复
 
@@ -36,7 +36,7 @@
 
 小屋添了几枚淡彩书签，日常陪伴、旅行和小任务更容易找到。喜欢熟悉的叶绿色，也能在「设置 → 小屋主题」切回经典小屋；新老玩家都能通过红点找到新设置，查看后小红点就会收好。
 
-<p align="center"><img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/home-bookmarks-v27-0.png" alt="淡彩书签区分今日陪伴与任务册" width="300"> <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/home-themes-v27-0.png" alt="设置里可切换经典小屋与书签页主题" width="300"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/../media/home-bookmarks-v27-0.png" alt="淡彩书签区分今日陪伴与任务册" width="300"> <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/../media/home-themes-v27-0.png" alt="设置里可切换经典小屋与书签页主题" width="300"></p>
 
 **今天，想和你一起做四件小事。** 长大后的拉姆每天有两件普通任务、一趟指定目的地旅行和一则购物小故事。去牧场坐坐，或替葡萄准备一瓶课间牛奶；购买故事里的物品就算完成，无需额外送礼。每日和每周各有 10 条目的地、10 条购物故事，分类展示一轮后重新洗牌。种子期保留独立的日常小约定。
 
@@ -44,12 +44,12 @@
 
 | 番茄红 · 热情开朗 | 奶油黄 · 勇敢体贴 | 天空蓝 · 冷酷耍帅 | 莓莓粉 · 温柔可爱 |
 | :---: | :---: | :---: | :---: |
-| <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/middle-red-wave-v27-0.png" alt="红色中级拉姆招手" width="130"> | <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/middle-yellow-wave-v27-0.png" alt="黄色中级拉姆招手" width="130"> | <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/middle-blue-wave-v27-0.png" alt="蓝色中级拉姆招手" width="130"> | <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/middle-pink-wave-v27-0.png" alt="粉色中级拉姆招手" width="130"> |
+| <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/../media/middle-red-wave-v27-0.png" alt="红色中级拉姆招手" width="130"> | <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/../media/middle-yellow-wave-v27-0.png" alt="黄色中级拉姆招手" width="130"> | <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/../media/middle-blue-wave-v27-0.png" alt="蓝色中级拉姆招手" width="130"> | <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/../media/middle-pink-wave-v27-0.png" alt="粉色中级拉姆招手" width="130"> |
 
 
 | 睡饱饱 Plus | 足球小子 | 天下第一好 |
 | :---: | :---: | :---: |
-| <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/medal-sleep-plus-v27-0.svg" alt="睡饱饱 Plus 奖章，数字3" width="110"> | <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/medal-football-kid-v27-0.svg" alt="足球小子圆奖牌" width="110"> | <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/docs/media/medal-best-friend-v27-0.svg" alt="天下第一好心形奖章" width="110"> |
+| <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/../media/medal-sleep-plus-v27-0.svg" alt="睡饱饱 Plus 奖章，数字3" width="110"> | <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/../media/medal-football-kid-v27-0.svg" alt="足球小子圆奖牌" width="110"> | <img src="https://raw.githubusercontent.com/andyforfun168/Lahm-pocket/main/../media/medal-best-friend-v27-0.svg" alt="天下第一好心形奖章" width="110"> |
 
 获得奖章会亮起红点，也会留下一篇小屋手记。旅行来信和单篇见闻在屏幕中央展开，稀有明信片染上浅紫底；轻点明信片下半部就能读信，听过后再点按钮即可合上。
 
