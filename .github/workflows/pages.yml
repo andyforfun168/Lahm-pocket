@@ -29,9 +29,9 @@ jobs:
         run: |
           python3 - <<'PY'
           import json, subprocess
-          metadata = json.load(open('release-package.json'))
+          metadata = json.load(open('tools/deploy/release-package.json'))
           subprocess.run(['gh', 'release', 'download', metadata['tag'], '--pattern', metadata['asset']], check=True)
-          subprocess.run(['python3', 'prepare_site.py', metadata['asset'], '_site'], check=True)
+          subprocess.run(['python3', 'tools/deploy/prepare_site.py', metadata['asset'], '_site'], check=True)
           PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v5
@@ -41,4 +41,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v5
         with:
-          timeout: '1200000'
+          timeout: '600000'
