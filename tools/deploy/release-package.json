@@ -1,6 +1,6 @@
 {
   "tag": "v28.0",
-  "asset": "pocket-lahm-web-v28.0-binder-fix.zip",
-  "sha256": "5226602b1aa68ec966a5d3e9928b4f44f83f28efe160a1793cba4a044945c706",
-  "release_id": "rc7fc075cbc46ad7dd5dd16ad"
+  "asset": "pocket-lahm-web-v28.0-webkit-fix.zip",
+  "sha256": "f1d17315cdc82b0bc3b56620fb17fff0469c6e8bc8e7f5dcb99c618cd5eabd8f",
+  "release_id": "r895bd128fcf6225e46cb2333"
 }
