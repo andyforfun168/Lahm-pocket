@@ -6,7 +6,20 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.2">V28.2 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.5">V28.5 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+
+## V28.5，把旅行惊喜带回家
+
+每趟完整旅行带回一段见闻：普通 **97%**、稀有 **2%**、黄金 **1%**。小屋红点打开的旅行来信，与手记和收藏册里的是同一张。
+
+<table><tr>
+<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/travel/sea.webp" width="100%" alt="海边小镇的旅行风景"><br>海边小镇</td>
+<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/travel/snow.webp" width="100%" alt="雪山脚下的旅行风景"><br>雪山脚下</td>
+</tr></table>
+
+每地第 **12** 趟保底首条稀有，第 **16** 趟保底首条黄金；自然抽到会满足对应保底。从未拿过黄金的玩家，完整旅行累计至少 **40** 趟、到访至少 **5** 个不同地方时，会带回当前目的地的首金。原有五个目的地和收藏进度继续保留。
+
+[阅读完整 V28.5 更新说明与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.5)
 
 ## V28.2，回到拉姆课堂
 
