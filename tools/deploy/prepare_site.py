@@ -28,6 +28,10 @@ def prepare(archive, output):
             assert required in names, f'Missing root entry: {required}'
         manifest = json.loads(bundle.read('offline-manifest.json'))
         assert manifest['id'] == metadata['release_id'], 'Release identity mismatch'
+        if 'release-version.json' in names:
+            version_marker = json.loads(bundle.read('release-version.json'))
+            expected_marker = {key: manifest[key] for key in ('schema', 'id', 'version')}
+            assert version_marker == expected_marker, 'Release version marker mismatch'
         allowed = {r['path'] for r in manifest['resources']} | {'sw.js', 'offline-manifest.json'}
         assert set(names) == allowed, 'Undeclared files in normal release'
         assert b'lab-entry' not in bundle.read('index.html'), 'Test entry is not allowed'
