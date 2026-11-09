@@ -2,10 +2,11 @@
 
 [开始游戏](https://andyforfun168.github.io/Lahm-pocket/) · [返回首页](../../README.md) · [所有历史下载](https://github.com/andyforfun168/Lahm-pocket/releases)
 
-当前正式版为 **V28.2**。历代公告按发布时原样保留，旧玩法和说明以对应版本为准。
+当前正式版为 **V28.5**。历代公告按发布时原样保留，旧玩法和说明以对应版本为准。
 
 | 版本 | 图文公告 | 发布与下载 |
 | --- | --- | --- |
+| V28.5 | [首页图文](../../README.md#v285把旅行惊喜带回家) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.5) |
 | V28.2 | [首页图文](../../README.md#v282回到拉姆课堂) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.2) |
 | V28.0 | [阅读公告](RELEASE-v28.0.md) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.0) |
 | V27.0 | [阅读公告](RELEASE-v27.0.md) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v27.0) |
