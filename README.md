@@ -35,7 +35,7 @@
 
 <table><tr>
 <td width="50%" align="center"><img src="docs/media/snack-milk-v23-8.gif" alt="小拉姆喝麦香牛奶" width="100%"><br>喝完牛奶，再陪你发会儿呆。</td>
-<td width="50%" align="center"><img src="docs/media/restaurant.gif" alt="拉姆在餐厅帮忙送餐" width="100%"><br>系好围裙，认真帮个小忙。</td>
+<td width="50%" align="center"><img src="docs/media/v28.2-restaurant-serving.gif" alt="中级拉姆端着餐盘，在摩尔餐厅左右迈步送餐" width="100%"><br>系好围裙，认真帮个小忙。</td>
 </tr></table>
 
 场景跟着当地时间从晨光走到星夜。四种颜色的拉姆有自己的小性格，也会用自己的口吻，把陪伴写进手记。
