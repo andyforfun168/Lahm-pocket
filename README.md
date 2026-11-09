@@ -6,7 +6,28 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.0">V28.0 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.2">V28.2 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+
+## V28.2，回到拉姆课堂
+
+白天，阳光照进树屋；夜里，窗外亮起星星，教室里也点起了灯。基础课程现在在凯文的拉姆课堂上，场景会随当地时间变化。
+
+<table><tr>
+<td width="50%" align="center"><img src="docs/media/v28.2-classroom-day.jpg" alt="白天的拉姆课堂，阳光照进树屋" width="100%"><br>白天 · 阳光下的课堂</td>
+<td width="50%" align="center"><img src="docs/media/v28.2-classroom-night.jpg" alt="夜晚的拉姆课堂，窗外有星星，教室里亮着灯" width="100%"><br>夜晚 · 灯亮了</td>
+</tr></table>
+
+结业后，语言课1、英语课和魔法入门课的证书会收进「我的本领」的木质展示架。点开证书，可以放大细看，也能重温菩提大伯和葡萄的祝贺。
+
+<table><tr>
+<td width="33%" align="center"><img src="docs/media/v28.2-certificate-language.png" alt="语言课1结业证书" width="100%"><br>语言课1</td>
+<td width="33%" align="center"><img src="docs/media/v28.2-certificate-english.png" alt="英语课结业证书" width="100%"><br>英语课</td>
+<td width="33%" align="center"><img src="docs/media/v28.2-certificate-magic.webp" alt="魔法入门课结业证书" width="100%"><br>魔法入门课</td>
+</tr></table>
+
+小屋的「小动作」和「小本领」也搬到了一组页签里，随时可以切换，给小屋腾出一点空间。
+
+[阅读完整 V28.2 更新说明与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.2)
 
 ## 把小小的陪伴，装进口袋
 
@@ -46,7 +67,7 @@
 2. 从图标进入，在「设置 → 离线下载与更新」下载资源；完成后即可离线陪伴。
 3. 老玩家沿用原入口更新，下载后选择「保存进度并打开新版」，无需清除网站数据。
 
-每天凌晨4点后的首次上线会检查版本，发现更新会居中提醒。进度保存在当前设备，换设备或清理浏览器前，请先在设置中导出备份。
+联网时，游戏会轻量检查版本，首次发现新版就会居中提醒。选择「暂不更新」后，同一新版从次日当地时间凌晨 4 点起再次提醒。进度保存在当前设备，换设备或清理浏览器前，请先在设置中导出备份。
 
 [安装、更新与存档说明 →](docs/player-guide.md)
 
