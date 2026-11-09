@@ -1,0 +1,88 @@
+.travel-binder .album-shell{width:100%;max-width:480px;position:relative;isolation:isolate;padding:15px 13px 11px;border-radius:24px;background:var(--cover);border:2px solid var(--cover-deep);box-shadow:0 9px 20px #6457441a,2px 3px 0 var(--cover-light);color:#554d46}
+.travel-binder .album-shell:before{content:"";position:absolute;inset:5px;border:1.5px dashed #fff9;border-radius:18px;pointer-events:none;z-index:-1}
+.travel-binder .book-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 3px 11px;min-height:30px}
+.travel-binder .book-head>span:first-child{font-size:13px;font-weight:600;letter-spacing:.5px;line-height:1.6}
+.travel-binder .book-head small{display:block;font-size:7px;letter-spacing:1.4px;color:var(--cover-deep);font-weight:400}
+.travel-binder .cover-emblem svg{width:27px;height:27px;display:block}
+.travel-binder .page-holder{position:relative;background:#fffefa;border:1px solid #dcded5;border-radius:13px;margin-left:13px;padding:12px 9px 11px 12px;box-shadow:3px 3px 0 #ffffff85,-2px 0 0 #deded677}
+.travel-binder .page-caption{display:flex;align-items:center;justify-content:space-between;gap:6px;margin:0 0 9px;padding:0 1px;min-height:17px}
+.travel-binder .page-caption>span{font-size:10px;color:#7f8b77;font-weight:600}
+.travel-binder .page-caption small{font-size:8px;color:#a9ada2}
+.travel-binder .binder-rings{position:absolute;top:0;bottom:0;left:-10px;width:19px;pointer-events:none;z-index:2}
+.travel-binder .binder-rings i{position:absolute;left:0;width:18px;height:9px;border:2px solid #929b9a;border-left:0;border-radius:0 8px 8px 0;background:linear-gradient(180deg,#eff3f2,#b8c1be 55%,#fafcfa);box-shadow:1px 2px 2px #5b625b33;rotate:-5deg}
+.travel-binder .binder-rings i:nth-child(1){top:18%}
+.travel-binder .binder-rings i:nth-child(2){top:49%}
+.travel-binder .binder-rings i:nth-child(3){top:80%}
+.travel-binder .pockets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px 10px}
+.travel-binder .pocket{position:relative;padding:6px;background:#f6f7f2;border:1px solid #dedfd7;border-radius:10px;box-shadow:inset 0 0 0 2px #fff,0 1px 1px #89917f12}
+.travel-binder .pocket:after{content:"";position:absolute;inset:0;border-top:3px solid #fff;border-right:1px solid #fff9;border-radius:10px;background:linear-gradient(125deg,transparent 0 70%,#ffffff33 80%,transparent 89%);pointer-events:none}
+.travel-binder .postcard{position:relative;border:1px solid #cbd8be;border-radius:8px;overflow:hidden;background:#fafaf4;box-shadow:0 2px 4px #56684b19}
+.travel-binder .postcard.rare{border-color:#d8cae6;background:#f3edf8}
+.travel-binder .postcard-photo{position:relative;aspect-ratio:1.5;background:#e0e8d4;overflow:hidden}
+.travel-binder .postcard-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.travel-binder .rarity{position:absolute;right:4px;bottom:4px;border:1px solid #e9d5fa;background:#f7effb;color:#9677b0;font-size:7px;padding:3px 5px;border-radius:10px;white-space:nowrap}
+/* All pockets use the same intrinsic minimum in WebKit; compact content retains the former empty-page footprint. */
+.travel-binder .postcard-content{display:flex;flex-direction:column;align-items:stretch;justify-content:space-between;gap:2px;width:100%;height:79px;min-height:79px;padding:2px 5px;background:transparent;text-align:left}
+.travel-binder .postcard-heading{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;column-gap:2px;row-gap:0}
+.travel-binder .postcard-heading b{font-size:11px;color:#526d45;line-height:1.2;white-space:nowrap;font-weight:600}
+.travel-binder .postcard-heading time{font-size:8px;color:#99a48e;line-height:1.2;white-space:nowrap}
+.travel-binder .postcard-gift{display:flex;align-items:center;justify-content:center;gap:6px;min-height:25px;font-size:10px;color:#82986d}
+.travel-binder .postcard-gift img{display:block;width:26px;height:26px;object-fit:contain}
+.travel-binder .bean-icon{width:22px;height:22px;display:block}
+.travel-binder .postcard-read{display:block;text-align:center;font-size:9px;line-height:1.8;color:#97a48a}
+.travel-binder .rare .postcard-read{color:#9b83af}
+.travel-binder .pocket.empty{border-style:dashed;color:#b2bba9;box-shadow:inset 0 0 0 2px #fff}
+.travel-binder .empty-postcard{background:transparent;border-color:transparent;box-shadow:none}
+.travel-binder .empty-photo{display:grid;place-items:center;background:#eef0e8}
+.travel-binder .empty-photo>span{font-size:23px;opacity:.65}
+.travel-binder .empty-content{display:grid;place-items:center}
+.travel-binder .empty p{font-size:9px;line-height:1.8;text-align:center;margin:0}
+.travel-binder .book-footer{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:45px;margin-top:7px}
+.travel-binder .summary-link{min-height:44px;padding:8px 2px;background:transparent;text-align:left;color:var(--accent);font-size:11px;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+.travel-binder .page-nav{display:flex;align-items:center;gap:2px}
+.travel-binder .page-nav button{width:44px;min-height:44px;font-size:25px;line-height:1;border-radius:12px;background:#ffffff80;color:var(--accent);border:1px solid #ffffff9c}
+.travel-binder .page-nav>span{font-size:10px;font-variant-numeric:tabular-nums;min-width:37px;text-align:center;color:var(--accent)}
+.travel-binder .page-fade{animation:turn-in .15s ease-out}
+.travel-binder /* Four generated cloth palettes retain independent body and thread colours. */
+.travel-binder{--book-main:#b77f98;--book-shadow:#895d73}
+.travel-binder[data-color=red]{--book-main:#b66f68;--book-shadow:#864e49;--cover-deep:#934c4c;--stitch:#a6b58a}
+.travel-binder[data-color=yellow]{--book-main:#bc9a61;--book-shadow:#8a7045;--cover-deep:#8d6e40;--stitch:#649e99}
+.travel-binder[data-color=blue]{--book-main:#527793;--book-shadow:#38546b;--cover-deep:#49657f;--stitch:#d58b48}
+.travel-binder[data-color=pink]{--cover-deep:#8e5970;--stitch:#e2c68d}
+.travel-binder .color-field{margin-top:0}
+.travel-binder .album-shell{padding:42px 24px 40px;border:0;border-radius:24px;background:transparent;box-shadow:none;isolation:isolate}
+.travel-binder .album-shell:before{display:none}
+.travel-binder .binder-art{position:absolute;z-index:-1;inset:0;display:block;width:100%;height:100%;object-fit:fill;pointer-events:none;filter:drop-shadow(0 4px 5px #29323f33)}
+.travel-binder .page-holder{margin:0 22px 0 7px;padding:11px 8px 10px 10px;border-color:#dbd6c8;background:#fffef9 radial-gradient(#c4b9a11a .65px,transparent .8px) 0 0/3px 3px;box-shadow:2px 3px 0 #fffdf4,4px 5px 0 #e9e3d4,5px 6px 5px #14233344;border-radius:12px}
+.travel-binder .pocket{background:#f3f3ee;border-color:#dcded5;box-shadow:inset 0 0 0 2px #fff,0 1px 2px #8e8f7926}
+.travel-binder .binder-rings i{height:10px;border-color:#a7947b;background:linear-gradient(#fff4d7,#b5a48a 65%,#f9f0dc);box-shadow:1px 2px 2px #705c4a55}
+.travel-binder .book-footer{margin:9px 0 0;background:transparent;border:0;border-top:1px solid #e6e5db;border-radius:0;padding:5px 0 0;box-shadow:none}
+.travel-binder .summary-link{color:var(--cover-deep);font-size:10px}
+.travel-binder .page-nav button{background:#eff1e8;color:var(--cover-deep);border:0;box-shadow:none}
+.travel-binder .page-nav>span{color:var(--cover-deep)}
+.sheet.sheet-binder{max-width:none;width:min(508px,calc(100% - 20px));padding:12px;max-height:calc(100dvh - 24px)}
+.travel-binder{width:100%;--cover-deep:#49657f}.travel-binder button{font-family:inherit;touch-action:manipulation}.travel-binder[data-color=red]{--cover-deep:#934c4c}.travel-binder[data-color=yellow]{--cover-deep:#8d6e40}.travel-binder[data-color=pink]{--cover-deep:#8e5970}.travel-binder .binder-cover{display:block;padding:0;background:transparent;border:0;position:relative;width:min(100%,calc((100dvh - 140px)*.6666667));aspect-ratio:2/3;margin:0 auto;cursor:pointer;border-radius:20px;isolation:isolate}.travel-binder .cover-art{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;filter:drop-shadow(0 5px 6px #29323f33);pointer-events:none}.travel-binder .cover-subtitle{position:absolute;top:12.5%;left:10%;right:10%;text-align:center;color:#f5e6c7;font-size:clamp(6px,1.4vw,9px);font-weight:500;letter-spacing:.2em;line-height:1.6;pointer-events:none}.travel-binder[data-color=yellow] .cover-subtitle{color:#362414;font-weight:600}.travel-binder .cover-bookmark{position:absolute;top:2%;right:11%;width:8%;aspect-ratio:26/50;pointer-events:none;filter:drop-shadow(1px 2px 1px #3e2b2366)}.travel-binder .cover-bookmark svg{width:100%;height:100%}.travel-binder .album-shell{margin:auto}.travel-binder .postcard-content{border:0;border-radius:0;box-shadow:none}.travel-binder .pocket{min-width:0}.travel-binder .postcard-gift{height:24px!important;min-height:24px;gap:4px;flex-wrap:nowrap}.travel-binder .postcard-gift>.bean-icon:not(:first-child){display:none}.travel-binder .postcard-gift .bean-icon{width:18px;height:22px}.travel-binder .postcard-gift img{width:23px;height:23px}.travel-binder .postcard.golden{border-color:#dab45a;background:#fff0b9}.travel-binder .golden .postcard-content{background:linear-gradient(130deg,#fff4c7,#f5d986);color:#72551e}.travel-binder .golden .rarity,.story-rarity.golden-tag{background:#ffe391;color:#765013;border-color:#dbb958}.travel-binder .golden .postcard-read,.travel-binder .golden .postcard-gift{color:#826124}
+/* Shared painted binder entrance; follows the current Lahm color in both locations. */
+.travel-home-collection,.travel-collection-entry{--collection-icon:url('assets/collection-book-blue-v28.webp')}
+.travel-home-collection[data-color=red],.travel-collection-entry[data-color=red]{--collection-icon:url('assets/collection-book-red-v28.webp')}
+.travel-home-collection[data-color=yellow],.travel-collection-entry[data-color=yellow]{--collection-icon:url('assets/collection-book-yellow-v28.webp')}
+.travel-home-collection[data-color=pink],.travel-collection-entry[data-color=pink]{--collection-icon:url('assets/collection-book-pink-v28.webp')}
+.travel-collection-icon{display:block;background:var(--collection-icon) center/contain no-repeat}
+button.travel-home-collection>.travel-collection-icon,button.travel-collection-entry>.travel-collection-icon{transform:scale(1.3);transform-origin:center}
+.collection-curiosity{font-size:11px;line-height:1.9;color:#899777;margin:0;padding:0 13px 15px}.collection-golden{margin:0 12px 14px;padding:14px;background:#fff0b9;border:1px solid #dfc06e;border-radius:10px;color:#795d27}.collection-golden h4{font-size:14px;line-height:1.8;margin:10px 0}.collection-golden p{font-size:12px;line-height:2;margin:8px 0}.travel-paper .golden-story-title{font-size:17px;line-height:1.8;color:#76551d}.postcard-scenic.golden-postcard{border-color:#dab45a;background:#fff0b9}.golden-postcard .postcard-content{background:#fff0b9}.golden-postcard .postcard-rarity{background:#ffe391;color:#765013}.golden-bonus{display:inline-flex;align-items:center;gap:5px;color:#826124}.golden-bonus .bean-icon{width:20px;height:20px}
+@media(max-width:350px){.travel-binder .album-shell{padding:32px 17px 30px}.travel-binder .page-holder{margin-left:8px;margin-right:15px;padding:9px 5px 8px 8px}.travel-binder .pockets{gap:8px 6px}.travel-binder .pocket{padding:4px}.travel-binder .postcard-content{padding:2px 3px}.travel-binder .postcard-heading{gap:1px}.travel-binder .postcard-heading b{line-height:1.2}.travel-binder .postcard-gift{gap:2px}.travel-binder .postcard-gift .bean-icon{width:14px}.travel-binder .postcard-gift img{width:18px!important;height:22px!important}.travel-binder .postcard-heading{flex-wrap:wrap}.travel-binder .postcard-heading b{font-size:10px}.travel-binder .postcard-heading time{font-size:7px}.travel-binder .postcard-read{font-size:8px}.travel-binder .postcard-gift{font-size:9px}.travel-binder .rarity{font-size:6px;padding:2px 4px}.travel-binder .page-caption>span{font-size:9px}.travel-binder .page-caption small{font-size:7px}.travel-binder .summary-link{font-size:9px}.travel-binder .page-nav>span{min-width:29px}}
+@media(max-height:640px){.travel-binder .album-shell{padding-top:32px;padding-bottom:32px}.travel-binder .postcard-content{height:79px;min-height:79px;gap:2px;padding-block:2px}.travel-binder .postcard-photo{aspect-ratio:1.6}.travel-binder .page-holder{padding-top:8px;padding-bottom:7px}}
+
+.travel-binder .cover-loading{position:absolute;inset:0;display:grid;place-items:center;font-size:12px;color:#869279;line-height:1.8}
+
+/* The cover is a physical book, not a shrinking press animation. */
+.travel-binder .binder-cover:active:not(:disabled){transform:none}
+
+/* A translucent memo on the page; pseudo-elements preserve the footer's measured geometry. */
+.travel-binder{--summary-note-rgb:82,119,147}
+.travel-binder[data-color="red"]{--summary-note-rgb:182,111,104}
+.travel-binder[data-color="yellow"]{--summary-note-rgb:188,154,97}
+.travel-binder[data-color="pink"]{--summary-note-rgb:174,112,143}
+.travel-binder .summary-link{position:relative;isolation:isolate;z-index:0;text-decoration:none}
+.travel-binder .summary-link::before{content:"";position:absolute;inset:5px -6px 5px -5px;z-index:-1;pointer-events:none;background:rgba(var(--summary-note-rgb),.2);border:1px solid rgba(var(--summary-note-rgb),.3);border-radius:2px 3px 4px 2px;box-shadow:1px 2px 3px #40352b1a;transform:rotate(-2deg)}
+.travel-binder .summary-link::after{content:"";position:absolute;width:22px;height:8px;left:calc(50% - 11px);top:2px;pointer-events:none;background:#fff9;border:1px solid #fff8;transform:rotate(3deg)}
