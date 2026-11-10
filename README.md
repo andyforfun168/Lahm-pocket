@@ -14,12 +14,12 @@
 
 <table>
 <tr>
-<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/bottle-v28.8-furnished-morning.webp" width="100%" alt="清晨的漂流瓶小屋"><br>漂流瓶小屋 · 清晨</td>
-<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/magic-v28.8-furnished-day.webp" width="100%" alt="白天的梦幻魔力小屋"><br>梦幻魔力小屋 · 白天</td>
+<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/bottle-v28.8-furnished-morning.webp?v=28.8" width="100%" alt="清晨的漂流瓶小屋"><br>漂流瓶小屋 · 清晨</td>
+<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/magic-v28.8-furnished-day.webp?v=28.8" width="100%" alt="白天的梦幻魔力小屋"><br>梦幻魔力小屋 · 白天</td>
 </tr>
 <tr>
-<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/hunter-v28.8-furnished-sunset.webp" width="100%" alt="黄昏的猎人小屋"><br>猎人小屋 · 黄昏</td>
-<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/christmas-v28.8-night.webp" width="100%" alt="夜晚的圣诞小屋"><br>圣诞小屋 · 夜晚</td>
+<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/hunter-v28.8-furnished-sunset.webp?v=28.8" width="100%" alt="黄昏的猎人小屋"><br>猎人小屋 · 黄昏</td>
+<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/christmas-v28.8-night.webp?v=28.8" width="100%" alt="夜晚的圣诞小屋"><br>圣诞小屋 · 夜晚</td>
 </tr>
 </table>
 
