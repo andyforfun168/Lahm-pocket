@@ -6,7 +6,24 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.5">V28.5 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.8">V28.8 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+
+## V28.8，给小屋换个风景
+
+猎人小屋添了木椅与地图桌，漂流瓶小屋能望见云下的河，梦幻魔力小屋在藤蔓间铺好了软毯。圣诞小屋也换了红木墙、大雪窗和新地毯。每间小屋都会随时间换光。
+
+<table>
+<tr>
+<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/bottle-v28.8-furnished-morning.webp" width="100%" alt="清晨的漂流瓶小屋"><br>漂流瓶小屋 · 清晨</td>
+<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/magic-v28.8-furnished-day.webp" width="100%" alt="白天的梦幻魔力小屋"><br>梦幻魔力小屋 · 白天</td>
+</tr>
+<tr>
+<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/hunter-v28.8-furnished-sunset.webp" width="100%" alt="黄昏的猎人小屋"><br>猎人小屋 · 黄昏</td>
+<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/christmas-v28.8-night.webp" width="100%" alt="夜晚的圣诞小屋"><br>圣诞小屋 · 夜晚</td>
+</tr>
+</table>
+
+[阅读 V28.8 更新说明与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.8)
 
 ## V28.5，把旅行惊喜带回家
 
