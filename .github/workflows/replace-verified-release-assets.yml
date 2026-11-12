@@ -1,0 +1,401 @@
+name: Replace verified historical release assets
+on: workflow_dispatch
+permissions: {}
+concurrency:
+  group: verified-release-asset-replacement
+  cancel-in-progress: false
+jobs:
+  first:
+    name: Verify oldest and current release
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    permissions:
+      contents: write
+    steps:
+      - name: Verify and replace release packages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BATCH: '0'
+        run: &replace |
+          python3 -u - <<'PY'
+          """Replace only the pinned PocketLahm release attachments after verifying each new ZIP."""
+          from copy import copy
+          from hashlib import file_digest, sha256
+          import json
+          import os
+          from pathlib import Path
+          import re
+          import subprocess
+          import tempfile
+          from time import sleep
+          from urllib.error import HTTPError
+          from urllib.parse import quote, urlencode
+          from urllib.request import Request, urlopen
+          import uuid
+          from zipfile import ZIP_DEFLATED, ZipFile
+          
+          REPO = 'andyforfun168/Lahm-pocket'
+          OLD_FUNCTION = '538c84242d7a207f8cd28d81bb087174516ad7d19590e66d1f4254cefa7b98b6'
+          FUNCTION = rb'(?m)^export function colorPixels\([^\n]+\n[\s\S]*?^}'
+          MARKER = rb'(<meta name="ramu-release" content=")([^"]+)(")'
+          ALLOWED_CHANGES = {'motion.mjs', 'index.html', 'offline-manifest.json', 'release-version.json'}
+          LIVE = ('v28.9', 'pocket-lahm-web-v28.9-clean.zip',
+                  '02fc28562f589de1a25505eab522629dccb5f2579b12ec25ee0d011eb86a8839',
+                  'rcee7ae6cec799df4acb12556')
+          
+          
+          def require(condition, message):
+              if not condition:
+                  raise ValueError(message)
+          
+          
+          def sha(data):
+              return sha256(data).hexdigest()
+          
+          
+          def file_sha(path):
+              with path.open('rb') as source:
+                  return file_digest(source, 'sha256').hexdigest()
+          
+          
+          def json_bytes(value):
+              return (json.dumps(value, ensure_ascii=False, separators=(',', ':')) + '\n').encode()
+          
+          
+          def replace_motion(source):
+              match, = re.finditer(FUNCTION, source)
+              require(sha(match[0]) == OLD_FUNCTION, 'Unexpected original dye function')
+              require(b'function makeTint(' not in source, 'Duplicate helper name')
+              return source[:match.start()] + CLEAN_FUNCTION.encode() + source[match.end():]
+          
+          
+          def repack(source, target):
+              with ZipFile(source) as old:
+                  names = old.namelist()
+                  require(len(names) == len(set(names)), 'Duplicate ZIP members')
+                  motion = replace_motion(old.read('motion.mjs'))
+                  index = old.read('index.html')
+                  marker, = re.finditer(MARKER, index)
+                  old_id = marker[2]
+                  new_id = ('r' + sha(old_id + b':' + motion)[:24]).encode()
+                  changed = {
+                      'motion.mjs': motion,
+                      'index.html': index[:marker.start(2)] + new_id + index[marker.end(2):],
+                  }
+                  require(old_id not in old.read('sw.js'), 'Worker embeds the previous build ID')
+                  if 'release-version.json' in names:
+                      version = json.loads(old.read('release-version.json'))
+                      require(version['id'].encode() == old_id, 'Invalid release version marker')
+                      version['id'] = new_id.decode()
+                      changed['release-version.json'] = json_bytes(version)
+                  if 'offline-manifest.json' in names:
+                      manifest = json.loads(old.read('offline-manifest.json'))
+                      require(manifest['id'].encode() == old_id, 'Invalid offline build ID')
+                      manifest['id'] = new_id.decode()
+                      updated = set()
+                      for entry in manifest['resources']:
+                          name = entry['path']
+                          if name in changed:
+                              entry.update(bytes=len(changed[name]), sha256=sha(changed[name]))
+                              updated.add(name)
+                      require(updated == set(changed), 'Missing changed files in offline manifest')
+                      manifest['bytes'] = sum(entry['bytes'] for entry in manifest['resources'])
+                      changed['offline-manifest.json'] = json_bytes(manifest)
+                  with ZipFile(target, 'x', ZIP_DEFLATED, compresslevel=1) as clean:
+                      for member in old.infolist():
+                          name = member.filename
+                          data = changed[name] if name in changed else old.read(member)
+                          clean.writestr(copy(member), data, ZIP_DEFLATED, compresslevel=1)
+          
+          
+          def verify_archives(source, target):
+              with ZipFile(source) as old, ZipFile(target) as clean:
+                  names = clean.namelist()
+                  require(set(names) == set(old.namelist()) and len(names) == len(old.namelist()),
+                          'ZIP members changed')
+                  require(clean.read('motion.mjs') == replace_motion(old.read('motion.mjs')),
+                          'Unexpected differences in motion.mjs')
+                  index = clean.read('index.html')
+                  previous_index = old.read('index.html')
+                  marker, = re.finditer(MARKER, index)
+                  previous, = re.finditer(MARKER, previous_index)
+                  require(marker[2] != previous[2] and
+                          re.sub(MARKER, rb'\1BUILD\3', index) == re.sub(MARKER, rb'\1BUILD\3', previous_index),
+                          'Unexpected differences in index.html')
+                  manifest = None
+                  if 'offline-manifest.json' in names:
+                      manifest = json.loads(clean.read('offline-manifest.json'))
+                      old_manifest = json.loads(old.read('offline-manifest.json'))
+                      resources = {row['path']: row for row in manifest['resources']}
+                      previous_resources = {row['path']: row for row in old_manifest['resources']}
+                      require(set(resources) == set(previous_resources) and manifest['id'].encode() == marker[2]
+                              and manifest['version'] == old_manifest['version']
+                              and manifest['bytes'] == sum(r['bytes'] for r in resources.values()),
+                              'Offline manifest metadata mismatch')
+                  else:
+                      resources = {}
+                  if 'release-version.json' in names:
+                      version = json.loads(clean.read('release-version.json'))
+                      old_version = json.loads(old.read('release-version.json'))
+                      require(version == {**old_version, 'id': marker[2].decode()},
+                              'Release version metadata mismatch')
+                  for name in names:
+                      data = clean.read(name)
+                      if name not in ALLOWED_CHANGES:
+                          require(old.read(name) == data, f'Unrelated ZIP member changed: {name}')
+                      if name in resources:
+                          entry = resources[name]
+                          require(entry['bytes'] == len(data) and entry['sha256'] == sha(data),
+                                  f'Offline integrity mismatch: {name}')
+                  require(not (set(resources) - set(names)), 'Missing ZIP members for offline play')
+                  print(f'Verified {len(names)} members, build {marker[2].decode()}', flush=True)
+          
+          
+          def api(path, method='GET', data=None):
+              headers = {
+                  'Accept': 'application/vnd.github+json',
+                  'Authorization': 'Bearer ' + os.environ['GH_TOKEN'],
+                  'X-GitHub-Api-Version': '2022-11-28',
+                  'Content-Type': 'application/json',
+              }
+              body = None if data is None else json_bytes(data)
+              url = f'https://api.github.com/repos/{REPO}{path}'
+              with urlopen(Request(url, data=body, headers=headers, method=method), timeout=20) as response:
+                  content = response.read()
+                  return json.loads(content) if content else None
+          
+          
+          def release_assets(release_id):
+              return api(f'/releases/{release_id}/assets?per_page=100')
+          
+          
+          def match_name(assets, name):
+              matches = [a for a in assets if a['name'] == name]
+              require(len(matches) <= 1, f'Duplicate asset name {name}')
+              return next(iter(matches), None)
+          
+          
+          def public_url(tag, name):
+              return f'https://github.com/{REPO}/releases/download/{quote(tag, safe="")}/{quote(name, safe="")}'
+          
+          
+          def fresh(url):
+              return url + '?' + urlencode({'verify': uuid.uuid4().hex})
+          
+          
+          def download(tag, name, target):
+              subprocess.run(['curl', '-fSsL', '--retry', '2', '--max-time', '420',
+                              '-o', str(target), fresh(public_url(tag, name))], check=True)
+          
+          
+          def verify_public(tag, name, local=None):
+              # Request just the first ZIP header. GitHub's API digest verifies the complete object.
+              result = subprocess.run(
+                  ['curl', '-fSsL', '--max-time', '12', '--max-filesize', '64',
+                   '--range', '0-63', fresh(public_url(tag, name))],
+                  check=True, capture_output=True,
+              ).stdout
+              if local is not None:
+                  with local.open('rb') as source:
+                      require(result == source.read(64), f'Unexpected download content for {name}')
+              else:
+                  require(len(result) == 64 and result.startswith(b'PK\x03\x04'),
+                          f'Invalid public ZIP response for {name}')
+          
+          
+          def upload(release_id, name, source):
+              url = f'https://uploads.github.com/repos/{REPO}/releases/{release_id}/assets?'
+              headers = f'header = "Authorization: Bearer {os.environ["GH_TOKEN"]}"\n'
+              response = subprocess.run(
+                  ['curl', '-fSs', '--config', '-', '--request', 'POST',
+                   '--header', 'Content-Type: application/zip', '--max-time', '600',
+                   '--upload-file', str(source), url + urlencode({'name': name})],
+                  input=headers.encode(), check=True, capture_output=True,
+              ).stdout
+              return json.loads(response)
+          
+          
+          def check_asset(asset, digest, size=None):
+              require(asset and asset['state'] == 'uploaded' and asset['digest'] == 'sha256:' + digest
+                      and (size is None or asset['size'] == size), 'GitHub asset digest or size mismatch')
+          
+          
+          def rename(asset_id, name, label):
+              return api(f'/releases/assets/{asset_id}', 'PATCH', {'name': name, 'label': label or ''})
+          
+          
+          def remove_old(asset_id):
+              api(f'/releases/assets/{asset_id}', 'DELETE')
+              try:
+                  api(f'/releases/assets/{asset_id}')
+              except HTTPError as exc:
+                  if exc.code == 404:
+                      return
+                  raise
+              raise ValueError('Removed old asset still appears in GitHub API')
+          
+          
+          def switch(tag, release_id, original, old, clean, holding, expected, target):
+              label = old.get('label') or ''
+              # Keep both objects until the replacement works at the original URL.
+              try:
+                  if old['name'] == original:
+                      rename(old['id'], holding, label)
+                  if clean['name'] != original:
+                      rename(clean['id'], original, label)
+                  current = match_name(release_assets(release_id), original)
+                  require(current and current['id'] == clean['id'], 'Public name points to wrong asset')
+                  check_asset(current, expected, target.stat().st_size)
+                  for attempt in range(4):
+                      try:
+                          verify_public(tag, original, target)
+                          break
+                      except (ValueError, subprocess.CalledProcessError):
+                          if attempt == 3:
+                              raise
+                          sleep(1)
+              except Exception:
+                  # Restore the old public URL if the new object could not take over.
+                  assets = release_assets(release_id)
+                  current = match_name(assets, original)
+                  if current and current['id'] == clean['id']:
+                      rename(clean['id'], clean['name'], label)
+                  if not match_name(release_assets(release_id), original):
+                      rename(old['id'], original, label)
+                  raise
+              remove_old(old['id'])
+          
+          
+          def replace(row):
+              tag, release_id, original, old_id, original_sha = row
+              print(f'Processing {tag}/{original} (old ID {old_id})', flush=True)
+              info = api(f'/releases/{release_id}')
+              require(info['tag_name'] == tag and not info['draft'] and not info.get('immutable'),
+                      'Release is no longer editable or tag changed')
+              assets = release_assets(release_id)
+              old = next((a for a in assets if a['id'] == old_id), None)
+              clean = match_name(assets, original)
+              holding = f'previous-{old_id}.zip'
+              staging = f'verified-{old_id}.zip'
+              if old is None:
+                  require(clean and clean['digest'] != 'sha256:' + original_sha and clean['state'] == 'uploaded',
+                          'Expected old asset or a completed replacement')
+                  verify_public(tag, original)
+                  print(f'Already replaced: {tag}/{original} new ID {clean["id"]}', flush=True)
+                  return
+              require(old['name'] in (original, holding), 'Old ZIP was renamed unexpectedly')
+              check_asset(old, original_sha)
+              with tempfile.TemporaryDirectory() as tmp:
+                  source, target = (Path(tmp) / n for n in ('original.zip', 'verified.zip'))
+                  download(tag, old['name'], source)
+                  require(file_sha(source) == original_sha, 'Original download SHA-256 mismatch')
+                  if tag == LIVE[0]:
+                      download(tag, LIVE[1], target)
+                      require(file_sha(target) == LIVE[2], 'Existing live package changed')
+                  else:
+                      repack(source, target)
+                  verify_archives(source, target)
+                  expected = file_sha(target)
+                  clean = clean if clean and clean['id'] != old_id else match_name(assets, staging)
+                  if not clean:
+                      clean = upload(release_id, staging, target)
+                  check_asset(api(f'/releases/assets/{clean["id"]}'), expected, target.stat().st_size)
+                  verify_public(tag, clean['name'], target)
+                  switch(tag, release_id, original, old, clean, holding, expected, target)
+                  line = f'{tag}/{original} new ID {clean["id"]}, sha256:{expected}'
+                  print(f'Replaced and verified: {line}', flush=True)
+                  with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+                      summary.write(f'- {line}\n')
+          
+          
+          def main():
+              require(os.environ['GITHUB_REPOSITORY'].lower() == REPO.lower() and
+                      os.environ['GITHUB_REF'] == 'refs/heads/main', 'Wrong repository or branch')
+              with urlopen(fresh(f'https://andyforfun168.github.io/Lahm-pocket/release-version.json'),
+                           timeout=20) as response:
+                  require(json.load(response)['id'] == LIVE[3], 'Live game build changed')
+              lane = int(os.environ['BATCH'])
+              if lane == 0:
+                  rows = [ROWS[0], ROWS[-1]]
+              else:
+                  rows = ROWS[1:-1][lane - 1::6]
+              failures = []
+              for row in rows:
+                  try:
+                      replace(row)
+                  except Exception as exc:
+                      print(f'Failed {row[0]}/{row[2]}: {exc}', flush=True)
+                      failures.append(row[3])
+              require(not failures, f'Attachments needing retry: {failures}')
+          
+          
+          CLEAN_FUNCTION = 'export function colorPixels(pixels,mask,color,maskAlpha=true){\n const [red,green,blue]=Object.hasOwn(PALETTE,color)?PALETTE[color]:PALETTE.pink;\n // Mask channels describe highlight, midtone and shadow coverage respectively.\n const r=makeTint(red),g=makeTint(green),b=makeTint(blue);\n for(let offset=0;offset<pixels.length;offset+=4){\n  const light=mask[offset],mid=mask[offset+1],dark=mask[offset+2];\n  if(light+mid+dark!==0){\n   pixels[offset]=r(pixels[offset],light,mid,dark);\n   pixels[offset+1]=g(pixels[offset+1],light,mid,dark);\n   pixels[offset+2]=b(pixels[offset+2],light,mid,dark);\n  }\n }\n if(maskAlpha)for(let offset=3;offset<pixels.length;offset+=4)pixels[offset]=mask[offset];\n return pixels;\n}\nfunction makeTint(shift){\n const highlight=Math.max(-255,Math.min(0,shift));\n const midtone=Math.max(-204,Math.min(51,shift));\n const shadow=Math.max(-153,Math.min(102,shift));\n return (value,light,mid,dark)=>{\n  const adjusted=value+(light*highlight+mid*midtone+dark*shadow)/255;\n  return adjusted<0?0:adjusted>255?255:adjusted;\n };\n}'
+          ROWS = [
+              ('v0.14.0', 429738468, 'ramu-pocket-web.zip', 694443091, '4963d4a7e1bd79e10ca1b335b0ca85d7c5bdd7ef23543f8315b8bb083e488183'),
+              ('v0.14.1', 429742389, 'ramu-pocket-web.zip', 694463374, '7381e2634b259bedb08d0fab089cd20aecea88638796ed367802866373550445'),
+              ('v20.1', 430082397, 'ramu-pocket-web-before-last-comments.zip', 697190417, '37ff9fc07b99f4949e1467fdf84468def73cfa2bcd31cd3b175eac014ccdf30f'),
+              ('v20.1', 430082397, 'ramu-pocket-web.zip', 697218163, '25a0adf065df9ce264e895f02565a4727fdee299cf89a3e480a079693a4d4ef0'),
+              ('v21.0', 430403633, 'ramu-pocket-web.zip', 697544952, '24523c5161d82417db3b34d1bb412c130aa5920d6d5710737f8573d3ee1c62a3'),
+              ('v21.1', 430432315, 'ramu-pocket-web.zip', 697676246, '262710a5198f31636f0f19fe5400318908417e09769d34affe6dee8c428c9f72'),
+              ('v22.2', 430937601, 'ramu-pocket-web.zip', 699880636, '88cd6d57947d85c9ed23faf2fa5bb890b74dba84b42ed63077c464f0792247ed'),
+              ('v23.8', 431247175, 'ramu-pocket-web.zip', 701133461, '9ee638f663a7340a2ea76fca2a55ac00d1982c5f580d8acc0958c4748ff462e2'),
+              ('v24.9', 432373413, 'ramu-pocket-web-before-offline-notice.zip', 704675606, 'ec4c8b2eafaa91de9d9473f1b570397e0aece2b7bd1391886edc17c5e4411404'),
+              ('v24.9', 432373413, 'ramu-pocket-web.zip', 704786870, 'a1972a0334c8283f5931727a328233fae501cea5cad120f87e2d68a9d62591c1'),
+              ('v25.5', 433498363, 'lahm-pocket-web-v25.5-before-growth-update.zip', 708347261, 'd28721f93ac667edd73f9a0b9a73b0f75005a8847b2e0e8675d28205905d53ed'),
+              ('v25.5', 433498363, 'lahm-pocket-web-v25.5-before-camping-fix.zip', 708527099, 'ebd725c02ea46bc0043f97d1726d31de794d294aab5a97de1f24ff8b4a6f21d5'),
+              ('v25.5', 433498363, 'lahm-pocket-web-v25.5-camping-fix.zip', 708589821, 'b5449ea774ed1115ef8afca87b7ef6b52c4989edbd34da638cccba623af97f41'),
+              ('v25.7', 434957282, 'lahm-pocket-web-v25.7.zip', 712702667, 'ec49a684b671b482fe901ef5417f103ac8beed984c0ab3e14e05c36c84be23ea'),
+              ('v25.7', 434957282, 'lahm-pocket-web-v25.7-postcard-layout.zip', 714168519, '42a2fcf22254f3bb224f277fbb7ab6a82058f61c3d7fbeaaf66dc18508675d21'),
+              ('v25.7', 434957282, 'lahm-pocket-web-v25.7-milk-fix.zip', 714583373, '49b447d72fd72d426e3745c0f0e5b752fca17ca29ac82ed38ee1e21b4dc730aa'),
+              ('v26.0', 436715436, 'lahm-pocket-web-v26.0.zip', 717725075, '53288d5411bafa3c74ed87542c5c806fc60c7b07e1c2fc3916706a917a8aed92'),
+              ('v26.0', 436715436, 'lahm-pocket-web-v26.0-mobile-offline.zip', 718610118, '0582556b53dce40f9a5b91db530fa1fc7b35b0c43f3c2e16ad48f9dbd59a9a5c'),
+              ('v26.0', 436715436, 'lahm-pocket-web-v26.0-iphone-optimized.zip', 719219033, '289a2f571dee22328d15e06f9c3e97b3d4549ce67e8c7bbce400b13682f1eb59'),
+              ('v26.0', 436715436, 'lahm-pocket-web-v26.0-homecoming-fix.zip', 719292663, '89c2d6cbc64c3074727457b5e0f4f7bf2b164663a69be658a9d206c61653be29'),
+              ('v26.0', 436715436, 'lahm-pocket-web-v26.0-restaurant-and-quests.zip', 719348270, '6be73891ef173120890acac8952560835b8a5df18af925033727d0a6167c2a6b'),
+              ('v26.0', 436715436, 'lahm-pocket-web-v26.0-offline-guide.zip', 719408150, '6096ea75a3c4c2a04fa1e9d37e4b17bbcf80776af406a63fd03b4587315f6333'),
+              ('v26.0', 436715436, 'lahm-pocket-web-v26.0-travel-collection.zip', 719669617, 'a8eb342d5f06926e223754cc606f67a5d2ba17651edff6b72e4610a4577ed569'),
+              ('v26.0', 436715436, 'lahm-pocket-web-v26.0-collection-button-d.zip', 719706579, 'afc9ce4801dca4590572b8f61455e07bcc2ba023db9853c0d82cdcf3b0185f1c'),
+              ('v26.0', 436715436, 'lahm-pocket-web-v26.0-home-and-update.zip', 719751728, 'ab664930a458ca1f55cb367f945a0f88ee1df70f4ed470bc2db081a7b67ccb46'),
+              ('v27.0', 437497045, 'pocket-lahm-web-v27.0.zip', 720343484, 'c6f2d664a4df56013f9d2490d983110328af8c7ec468bc164ebc4f0a0446f359'),
+              ('v27.0', 437497045, 'pocket-lahm-web-v27.0-experience-fix.zip', 720436428, '279d498fa92972d338be22759531d1d7ea7da40bf3211fed22b07a8a23f5f17e'),
+              ('v27.0', 437497045, 'pocket-lahm-web-v27.0-travel-medals-fix.zip', 721509558, 'a0dab1ba3d71572c1757d293028e63629f26d20e37d2ec2a61779e5da1b10d6a'),
+              ('v27.0', 437497045, 'pocket-lahm-web-v27.0-medals-rename-fix.zip', 721521168, 'bbabda72c5c04e2394bed38f972c7d27be9bb2e04417fc48eca088e09d28629a'),
+              ('v27.0', 437497045, 'pocket-lahm-web-v27.0-rounded-panels-fix.zip', 721555432, '0fa659bcf21b88cd52b01cf8523fa40e0809534330cadb5b48e5289acb826567'),
+              ('v27.0', 437497045, 'pocket-lahm-web-v27.0-journal-update.zip', 721680138, '65f4c7c1ebf5c3e28936142e32b11b5f23410d6bc820006ca4d9268c45e92bfb'),
+              ('v27.0', 437497045, 'pocket-lahm-web-v27.0-journal-layout-update.zip', 721694817, '5f242aa455ce94a25ab3d9c5a563133ae34a05d8b9b3b2a3606b019e662d6cb9'),
+              ('v27.0', 437497045, 'pocket-lahm-web-v27.0-travel-album-update.zip', 722134740, '777957f5dd897bffc825780717df67fe610ef537cc283abba9a9f853bf8c6112'),
+              ('v28.0', 438085389, 'pocket-lahm-web-v28.0.zip', 723174768, '69e371cb36445c95a545cd34d93fb85ecff9645a24c819f3e6783669d6112fee'),
+              ('v28.0', 438085389, 'pocket-lahm-web-v28.0-binder-fix.zip', 723254063, '5226602b1aa68ec966a5d3e9928b4f44f83f28efe160a1793cba4a044945c706'),
+              ('v28.0', 438085389, 'pocket-lahm-web-v28.0-webkit-fix.zip', 723331464, 'f1d17315cdc82b0bc3b56620fb17fff0469c6e8bc8e7f5dcb99c618cd5eabd8f'),
+              ('v28.2', 438647957, 'pocket-lahm-web-v28.2.zip', 725797716, '0bff0f22f4ee5c53ad0d690c59b933c3e576651bf68298389ed1752fdd2cb4f5'),
+              ('v28.2', 438647957, 'pocket-lahm-web-v28.2-light-update.zip', 725839873, '5c86340190138cefdbe0542fbcba507be19e1d92d9a6906d215684d4a0107c61'),
+              ('v28.2', 438647957, 'pocket-lahm-web-v28.2-arcade-update.zip', 726449422, 'cf7c29bc59059c643ddf940df019a8c035ae440661a092e314f888c805f23e19'),
+              ('v28.5', 438829825, 'pocket-lahm-web-v28.5.zip', 726580443, '07a4ff9e365bfcc9d9508d16612244f21b597d439dc66dee16ebf8b408a1cf41'),
+              ('v28.6', 439413203, 'pocket-lahm-web-v28.6.zip', 728269330, 'ac3753b456556ff80616390600e2789c9922c4686f77f2fc38e18c39020c5ac5'),
+              ('v28.6', 439413203, 'pocket-lahm-web-v28.6-assistant-update.zip', 728374091, '50246fa67820de6741e058ce28795342757fa3986699613c6ac55d618857ad96'),
+              ('v28.7', 439854972, 'pocket-lahm-web-v28.7.zip', 729720892, '527737850c604f397ef05fec54e39160b5e26512adc8721afc2b2cdc9cce3bf5'),
+              ('v28.8', 440100735, 'pocket-lahm-web-v28.8.zip', 730669035, 'fedcc2beff91d6c54245f97d4592985b6c4d0bfc0d3ac5556c922f2a1bc5678c'),
+              ('v28.9', 441211267, 'pocket-lahm-web-v28.9.zip', 734005901, 'f675d1b20454054f95b6b6a312eaa33b43b2ad00db3e1a9da51280ac1612921d'),
+          ]
+          
+          if __name__ == '__main__':
+              main()
+          PY
+  remaining:
+    name: Replace historical batch ${{ matrix.batch }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    needs: first
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        batch: [1, 2, 3, 4, 5, 6]
+    permissions:
+      contents: write
+    steps:
+      - name: Verify and replace release packages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BATCH: '${{ matrix.batch }}'
+        run: *replace
