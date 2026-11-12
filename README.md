@@ -1,4 +1,4 @@
-<a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/pocket-lahm-postcard.gif" alt="口袋拉姆，溪畔树屋里的小日常" width="100%"></a>
+<a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/pocket-lahm-postcard-christmas-v28.8.gif" alt="口袋拉姆，红色拉姆在圣诞小屋吃巧克力豆" width="100%"></a>
 
 <h1 align="center">口袋拉姆 · Pocket Lahm</h1>
 
