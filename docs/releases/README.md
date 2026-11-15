@@ -2,12 +2,14 @@
 
 [开始游戏](https://andyforfun168.github.io/Lahm-pocket/) · [返回首页](../../README.md) · [所有历史下载](https://github.com/andyforfun168/Lahm-pocket/releases)
 
-当前正式版为 **V28.5**。历代公告按发布时原样保留，旧玩法和说明以对应版本为准。
+历代公告按发布时原样保留，旧玩法和说明以对应版本为准。
 
 | 版本 | 图文公告 | 发布与下载 |
 | --- | --- | --- |
-| V28.5 | [首页图文](../../README.md#v285把旅行惊喜带回家) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.5) |
-| V28.2 | [首页图文](../../README.md#v282回到拉姆课堂) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.2) |
+| V29.1 | [首页图文](../../README.md#v291活动结束时拉姆会捎来提醒) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.1) |
+| V29.0 | [首页图文](../../README.md#v290走进藏宝神殿) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.0) |
+| V28.5 | [首页图文](https://github.com/andyforfun168/Lahm-pocket/blob/c97808964bf9c05bcea33807be9a5839df989961/README.md#v285把旅行惊喜带回家) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.5) |
+| V28.2 | [首页图文](https://github.com/andyforfun168/Lahm-pocket/blob/c97808964bf9c05bcea33807be9a5839df989961/README.md#v282回到拉姆课堂) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.2) |
 | V28.0 | [阅读公告](RELEASE-v28.0.md) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.0) |
 | V27.0 | [阅读公告](RELEASE-v27.0.md) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v27.0) |
 | V26.0 | [阅读公告](RELEASE-v26.0.md) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v26.0) |
