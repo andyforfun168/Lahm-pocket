@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -35,8 +36,24 @@ jobs:
           PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v5
+        id: pages_artifact
         with:
           path: _site
+      - name: Wait for the Pages artifact to become available
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_ID: ${{ steps.pages_artifact.outputs.artifact_id }}
+        run: |
+          test -n "$ARTIFACT_ID"
+          for attempt in {1..15}; do
+            if gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?name=github-pages" \
+              --jq '.artifacts[] | select(.expired == false) | .id' | grep -Fx "$ARTIFACT_ID"; then
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "::error::Pages artifact $ARTIFACT_ID is not yet available"
+          exit 1
       - name: Publish Pages
         id: deployment
         uses: actions/deploy-pages@v5
