@@ -1,4 +1,4 @@
-<a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/pocket-lahm-postcard.gif" alt="口袋拉姆，溪畔树屋里的小日常" width="100%"></a>
+<a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/pocket-lahm-postcard-v29.1.gif" alt="口袋拉姆，圣诞小屋黄昏里吃披萨的蓝色初级拉姆" width="100%"></a>
 
 <h1 align="center">口袋拉姆 · Pocket Lahm</h1>
 
@@ -13,8 +13,6 @@
 - 可分别开启下课、打工结束和旅行返家提醒。在 iPhone 上，从主屏幕的游戏图标打开「设置 → 活动结束提醒」，点击「允许系统通知」。手机联网时可以接收推送。
 - 变色药水和复色解药在兑换、使用前增加确认。游戏厅显示拉姆的当前体色，手记保留各成长阶段记录的颜色。
 - 改名药水首瓶 500 摩尔豆，之后每瓶 2000 摩尔豆。
-
-<p align="center"><img src="docs/media/pocket-lahm-v29.1-junior-blue-pizza.gif" width="80%" alt="蓝色初级拉姆在黄昏的圣诞小屋吃奶油鬼脸匹萨"><br><sub>圣诞小屋 · 黄昏。蓝色初级拉姆的奶油鬼脸匹萨时间。</sub></p>
 
 [阅读 V29.1 更新说明与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.1)
 
