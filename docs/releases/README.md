@@ -6,6 +6,7 @@
 
 | 版本 | 图文公告 | 发布与下载 |
 | --- | --- | --- |
+| V29.1.1 | [背景音乐修复](../../README.md#v2911背景音乐修复) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.1.1) |
 | V29.1 | [首页图文](../../README.md#v291活动结束时拉姆会捎来提醒) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.1) |
 | V29.0 | [首页图文](../../README.md#v290走进藏宝神殿) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.0) |
 | V28.5 | [首页图文](https://github.com/andyforfun168/Lahm-pocket/blob/c97808964bf9c05bcea33807be9a5839df989961/README.md#v285把旅行惊喜带回家) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.5) |
