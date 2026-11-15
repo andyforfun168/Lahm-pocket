@@ -1,4 +1,4 @@
-<a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/pocket-lahm-postcard-christmas-sunset.gif" alt="口袋拉姆，红色拉姆在黄昏的圣诞小屋吃巧克力豆" width="100%"></a>
+<a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/school/treasure-temple-preview.webp" alt="藏宝神殿，火、水、木三系祭台和拉姆王金像" width="100%"></a>
 
 <h1 align="center">口袋拉姆 · Pocket Lahm</h1>
 
@@ -6,7 +6,37 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v28.8">V28.8 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.0">V29.0 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+
+## V29.0，走进藏宝神殿
+
+超级拉姆可以从庄园「我的本领」进入藏宝神殿。看过火、水、木三系祭台后，等课程、形态和成长值达到条件，就能向拉姆王金像接受神力，回小屋观看变身。
+
+### 背上小包，去新的地方
+
+前哨站、开心农场、彩虹瀑布、咕噜艺术街和黑森林随中级拉姆开放。27 种点心有旅行特效，有的会从半路捎来消息，有的会给返家的信纸添上花纹。黑森林需要手动出发，带三种不同补给并办理保险。
+
+<table>
+<tr>
+<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/travel/v29.0/outpost-day.webp" width="100%" alt="前哨站 · 白天"><br>前哨站 · 白天</td>
+<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/travel/v29.0/happy-farm-sunset.webp" width="100%" alt="开心农场 · 黄昏"><br>开心农场 · 黄昏</td>
+</tr>
+<tr>
+<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/travel/v29.0/rainbow-waterfall-day.webp" width="100%" alt="彩虹瀑布 · 白天"><br>彩虹瀑布 · 白天</td>
+<td width="50%" align="center"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/travel/v29.0/black-forest-evening.webp" width="100%" alt="黑森林 · 夜晚"><br>黑森林 · 夜晚</td>
+</tr>
+</table>
+
+
+### 学院、药水与照料
+
+<img align="right" src="https://andyforfun168.github.io/Lahm-pocket/assets/item-190002.png" alt="灰黑色变色药水" width="125">
+
+学院新增手工课、清泥巴课、语言课2和动物课1。手工课结业后可解锁手工涂鸦，也能在满足对应条件时兑换灰黑色变色药水和复色解药。
+
+初级、中级或高级拉姆持续生病超过 72 小时会化为水滩，可用复活十字架唤醒。第一次化为水滩时会获得「向死而生」纪念章。
+
+[阅读 V29.0 完整更新说明与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.0)
 
 ## V28.8，给小屋换个风景
 
