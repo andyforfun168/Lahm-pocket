@@ -6,7 +6,11 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.1">V29.1 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.1.1">V29.1.1 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+
+## V29.1.1，背景音乐修复
+
+游戏前台的背景音乐意外暂停后，会尝试从原进度续播。
 
 ## V29.1，活动结束时，拉姆会捎来提醒
 
