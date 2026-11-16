@@ -1,4 +1,4 @@
-<a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/pocket-lahm-postcard-v29.1-larger.gif" alt="口袋拉姆，圣诞小屋黄昏里吃披萨的蓝色初级拉姆" width="100%"></a>
+<a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/pocket-lahm-postcard-v29.3.webp" alt="口袋拉姆，圣诞小屋黄昏里吃披萨的蓝色初级拉姆" width="100%"></a>
 
 <h1 align="center">口袋拉姆 · Pocket Lahm</h1>
 
