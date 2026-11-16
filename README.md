@@ -12,9 +12,13 @@
 
 高级拉姆可以上飞行课。领证后，在小屋试试「滑翔一小段」，也可以在手动出游前借一点风。普通路线少走 10 分钟，黑森林少走 20 分钟，每天共可用两次。
 
-<p align="center"><img src="docs/media/flight-certificate-v29.2.jpg" width="380" alt="飞行课结业后在学院领取证书"></p>
+<p align="center">
+<a href="https://andyforfun168.github.io/Lahm-pocket/assets/certificates-v29.0/flight.webp"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/certificates-v29.0/flight.webp" width="31%" alt="飞行课结业证书"></a>
+<a href="https://andyforfun168.github.io/Lahm-pocket/assets/handcraft-certificate.png"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/handcraft-certificate.png" width="31%" alt="手工课结业证书"></a>
+<a href="https://andyforfun168.github.io/Lahm-pocket/assets/certificates-v29.0/mud-cleaning.webp"><img src="https://andyforfun168.github.io/Lahm-pocket/assets/certificates-v29.0/mud-cleaning.webp" width="31%" alt="清泥巴课结业证书"></a>
+</p>
 
-<p align="center"><sub>飞行课结业后，去校长办公室收下证书。</sub></p>
+<p align="center"><sub>课程结业后，可以到校长办公室领取证书。</sub></p>
 
 初级陪伴满 8 天并达成健康陪伴和成长值条件后，可升到中级。英语课也提前到初级开放。旅行返家休息 3～4 小时，设置可开启「可以再次出游」提醒。
 
