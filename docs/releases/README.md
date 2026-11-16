@@ -6,6 +6,7 @@
 
 | 版本 | 图文公告 | 发布与下载 |
 | --- | --- | --- |
+| V29.3 | [首页图文](../../README.md#v293去宠物店遇见拉姆) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.3) |
 | V29.2 | [首页图文](../../README.md#v292借一点风去旅行) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.2) |
 | V29.1.1 | [背景音乐修复](../../README.md#v2911背景音乐修复) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.1.1) |
 | V29.1 | [首页图文](../../README.md#v291活动结束时拉姆会捎来提醒) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.1) |
