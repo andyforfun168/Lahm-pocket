@@ -12,7 +12,7 @@
 
 第一次打开游戏，可以从全屏引导直接走进淘淘乐街宠物店。选四种拉姆种子时，点一下旁边的小本子，就能放大看对应的见闻收藏册封面。
 
-<p align="center"><img src="docs/media/pocket-lahm-v29.3-pet-shop.jpg" width="370" alt="淘淘乐街宠物店的全屏领养页"></p>
+<p align="center"><img src="docs/media/pocket-lahm-v29.3-pet-shop-hd.jpg" width="370" alt="淘淘乐街宠物店的全屏领养页"></p>
 
 <p align="center"><sub>在淘淘乐街选一颗拉姆种子，再给它取个名字。</sub></p>
 
