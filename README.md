@@ -6,7 +6,19 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.3">V29.3 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.3.1">V29.3.1 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+
+## V29.3.1，照护修复
+
+万能药水和复活十字架各售 50 摩尔豆。使用后健康恢复到 100，饱食、水分、洁净补到至少 50。
+
+初级、中级和高级拉姆连续生病超过 5 天（120 小时）才会变成水滩，离线也计时。「向死而生」在第一次变成水滩时获得。
+
+<p align="center"><img src="docs/media/pocket-lahm-v29.3.1-health.jpg" width="370" alt="V29.3.1 小屋健康详情，显示五天时限和万能药水售价"></p>
+
+<p align="center"><sub>在小屋的「健康详情」查看照护方式。</sub></p>
+
+[阅读 V29.3.1 修复说明与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.3.1)
 
 ## V29.3，去宠物店遇见拉姆
 
