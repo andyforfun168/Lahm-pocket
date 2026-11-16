@@ -18,6 +18,14 @@
 
 <p align="center"><sub>在小屋的「健康详情」查看照护方式。</sub></p>
 
+### 旅行信纸
+
+四款旅行信纸的花纹在窄屏上也按原比例显示。手记和收藏册里的卡片底纹略微加深。
+
+<p align="center"><img src="docs/media/pocket-lahm-v29.3.1-stationery.jpg" width="370" alt="V29.3.1 的旅行来信，展示保持原比例的草莓压花信纸"></p>
+
+<p align="center"><sub>旅行来信里的草莓压花信纸。</sub></p>
+
 [阅读 V29.3.1 修复说明与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.3.1)
 
 ## V29.3，去宠物店遇见拉姆
