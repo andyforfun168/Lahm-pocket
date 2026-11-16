@@ -26,6 +26,10 @@
 
 <p align="center"><sub>旅行来信里的草莓压花信纸。</sub></p>
 
+### 通知文案修复
+
+联网打开新版时，游戏会更新通知脚本，让餐厅打工和小助教结束提醒显示各自的新文案。
+
 [阅读 V29.3.1 修复说明与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.3.1)
 
 ## V29.3，去宠物店遇见拉姆
