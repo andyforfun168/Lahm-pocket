@@ -6,7 +6,19 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.2">V29.2 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.3">V29.3 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+
+## V29.3，去宠物店遇见拉姆
+
+第一次打开游戏，可以从全屏引导直接走进淘淘乐街宠物店。选四种拉姆种子时，点一下旁边的小本子，就能放大看对应的见闻收藏册封面。
+
+<p align="center"><img src="docs/media/pocket-lahm-v29.3-pet-shop.jpg" width="370" alt="淘淘乐街宠物店的全屏领养页"></p>
+
+<p align="center"><sub>在淘淘乐街选一颗拉姆种子，再给它取个名字。</sub></p>
+
+见闻收藏册底部有「见闻汇总」和「小屋手记」两张便签，读完可以回到刚才那一页。小屋手记最多保留 100 条。餐厅打工和小助教结束各有自己的推送文案。
+
+[阅读 V29.3 更新说明与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.3)
 
 ## V29.2，借一点风去旅行
 
