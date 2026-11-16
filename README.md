@@ -6,11 +6,25 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.1.1">V29.1.1 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.2">V29.2 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+
+## V29.2，借一点风去旅行
+
+高级拉姆可以上飞行课。领证后，在小屋试试「滑翔一小段」，也可以在手动出游前借一点风，每趟少走 20 分钟，每天最多两次。
+
+<p align="center"><img src="docs/media/flight-certificate-v29.2.jpg" width="380" alt="飞行课结业后在学院领取证书"></p>
+
+<p align="center"><sub>飞行课结业后，去校长办公室收下证书。</sub></p>
+
+初级陪伴满 8 天并达成健康陪伴和成长值条件后，可升到中级。英语课也提前到初级开放。旅行返家休息 3～4 小时，设置可开启「可以再次出游」提醒。
+
+[阅读 V29.2 更新说明与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.2)
 
 ## V29.1.1，背景音乐修复
 
 游戏前台的背景音乐意外暂停后，会尝试从原进度续播。
+
+[阅读 V29.1.1 更新说明与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.1.1)
 
 ## V29.1，活动结束时，拉姆会捎来提醒
 
