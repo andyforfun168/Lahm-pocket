@@ -6,7 +6,15 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.5">V29.5 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.5.1">V29.5.1 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+
+## V29.5.1 小屋动画修复
+
+214 个小屋动画入口换用五色高清帧图，保留原先取景，修复 iPhone Safari 播放时可能出现的白屏或重载。
+
+网页版重新打开原地址即可。已安装离线版的玩家请先联网，在游戏内打开「离线与更新」，下载并切换到新版，存档会继续使用。
+
+[阅读 V29.5.1 修复说明与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.5.1)
 
 ## V29.5，成长、动画与奖章陈列
 
