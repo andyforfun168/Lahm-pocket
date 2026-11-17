@@ -6,6 +6,7 @@
 
 | 版本 | 图文公告 | 发布与下载 |
 | --- | --- | --- |
+| V29.5 | [成长、动画与奖章陈列](../../README.md#v295成长动画与奖章陈列) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.5) |
 | V29.3.1 | [照护与旅行信纸修复](../../README.md#v2931照护修复) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.3.1) |
 | V29.3 | [首页图文](../../README.md#v293去宠物店遇见拉姆) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.3) |
 | V29.2 | [首页图文](../../README.md#v292借一点风去旅行) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.2) |
