@@ -6,7 +6,17 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.3.1">V29.3.1 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.5">V29.5 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+
+## V29.5，成长、动画与奖章陈列
+
+- 成长｜种子、初级、中级、高级分别累计 24 小时、8 天、16 天、16 天健康陪伴，并达到本阶段 220、2,000、4,000、4,000 成长值。手记显示健康陪伴进度。
+- 课程｜语言课1和英语课各 3 节 × 3 小时，语言课2为 5 节 × 2 小时，火、水、木三系法术课各 3 节 × 5 小时。
+- 动画｜更新初级 34 段、中级 33 段、高级 36 段。修正体色、取景和首尾衔接，跳跳布丁前四秒锁定镜头，高级拉姆摸摸时会向右倾身。
+- 奖章｜新奖章自动上墙，三格满时替换最右一枚。可从奖章详情选左、中、右位置，保存后回小屋。
+- 照护｜初级、中级、高级连续生病超过 3 天（72 小时）会变成水滩，离线也计时。修复开心果在喂食列表漏显示的问题。
+
+[阅读 V29.5 更新说明与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.5)
 
 ## V29.3.1，照护修复
 
