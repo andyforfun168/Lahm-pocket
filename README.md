@@ -16,6 +16,10 @@
 - 奖章｜新奖章自动上墙，三格满时替换最右一枚。可从奖章详情选左、中、右位置，保存后回小屋。
 - 照护｜初级、中级、高级连续生病超过 3 天（72 小时）会变成水滩，离线也计时。修复开心果在喂食列表漏显示的问题。
 
+<p align="center"><img src="docs/media/pocket-lahm-v29.5-badges.jpg" width="370" alt="V29.5 小屋奖章陈列，顶部有左、中、右三个位置"></p>
+
+<p align="center"><sub>选好位置，再挑一枚奖章挂进小屋。</sub></p>
+
 [阅读 V29.5 更新说明与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.5)
 
 ## V29.3.1，照护修复
