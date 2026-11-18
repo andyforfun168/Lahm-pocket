@@ -33,7 +33,12 @@ def prepare(archive, output):
             expected_marker = {key: manifest[key] for key in ('schema', 'id', 'version')}
             assert version_marker == expected_marker, 'Release version marker mismatch'
         allowed = {r['path'] for r in manifest['resources']} | {'sw.js', 'offline-manifest.json'}
-        assert set(names) == allowed, 'Undeclared files in normal release'
+        online_files = metadata.get('online_files', [])
+        assert isinstance(online_files, list) and all(isinstance(name, str) for name in online_files), 'Invalid online file list'
+        online = set(online_files)
+        assert len(online) == len(online_files) and not online & allowed, 'Duplicate online file'
+        assert all(name == '_headers' or name.startswith('assets/') for name in online), 'Invalid online file'
+        assert set(names) == allowed | online, 'Undeclared files in normal release'
         assert b'lab-entry' not in bundle.read('index.html'), 'Test entry is not allowed'
         total = 0
         for resource in manifest['resources']:
