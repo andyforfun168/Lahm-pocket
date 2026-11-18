@@ -6,7 +6,13 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.5.1">V29.5.1 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.6">V29.6 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+
+## V29.6 精致小屋与旅行更新
+
+新增精致小屋主题、薄荷绿变色药水和随体色变化的六款背包。重新整理了出发窗口与新手指引，健康值高于 40 时累计健康陪伴，并缩小了动画与离线资源。
+
+[阅读 V29.6 更新说明与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.6)
 
 ## V29.5.1 小屋动画修复
 
