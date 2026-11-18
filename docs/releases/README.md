@@ -6,6 +6,7 @@
 
 | 版本 | 图文公告 | 发布与下载 |
 | --- | --- | --- |
+| V29.6 | [精致小屋与旅行更新](../../README.md#v296-精致小屋与旅行更新) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.6) |
 | V29.5.1 | [小屋动画修复](../../README.md#v2951-小屋动画修复) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.5.1) |
 | V29.5 | [成长、动画与奖章陈列](../../README.md#v295成长动画与奖章陈列) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.5) |
 | V29.3.1 | [照护与旅行信纸修复](../../README.md#v2931照护修复) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.3.1) |
