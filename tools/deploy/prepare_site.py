@@ -40,6 +40,8 @@ def prepare(archive, output):
         assert all(name == '_headers' or name.startswith('assets/') for name in online), 'Invalid online file'
         assert set(names) == allowed | online, 'Undeclared files in normal release'
         assert b'lab-entry' not in bundle.read('index.html'), 'Test entry is not allowed'
+        push_meta = b'<meta name="ramu-push-api" content="https://pocket-lahm-reminders.pocket-lahm-168.workers.dev/">'
+        assert bundle.read('index.html').count(push_meta) == 1, 'Production push endpoint is missing'
         total = 0
         for resource in manifest['resources']:
             safe_path(resource['path'])

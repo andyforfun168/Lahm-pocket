@@ -1,8 +1,11 @@
 {
   "tag": "v29.6",
-  "asset": "pocket-lahm-web-v29.6.zip",
-  "sha256": "24210a65b3359522d6667dc120cb87da0ad55c2b5a9a3f537ae81f88249f9b36",
-  "release_id": "r83b4e6152a756305be753da8",
+  "asset": "pocket-lahm-web-v29.6-push-fix.zip",
+  "sha256": "acd3646adae7bb401a0215a3dfee7794319fbefd002f55493e49a4e589f0d515",
+  "release_id": "r3dc0e702cf87be893cee2fbb",
+  "resources": 2028,
+  "bytes": 761681893,
+  "zip_bytes": 800453181,
   "online_files": [
     "_headers",
     "assets/binder-front-blue-faceless-v7.png",
