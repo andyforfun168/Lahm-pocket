@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -39,14 +39,16 @@ jobs:
         id: pages_artifact
         with:
           path: _site
+          name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Wait for the Pages artifact to become available
         env:
           GH_TOKEN: ${{ github.token }}
           ARTIFACT_ID: ${{ steps.pages_artifact.outputs.artifact_id }}
+          ARTIFACT_NAME: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
         run: |
           test -n "$ARTIFACT_ID"
           for attempt in {1..15}; do
-            if gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?name=github-pages" \
+            if gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?name=$ARTIFACT_NAME" \
               --jq '.artifacts[] | select(.expired == false) | .id' | grep -Fx "$ARTIFACT_ID"; then
               exit 0
             fi
@@ -56,6 +58,19 @@ jobs:
           exit 1
       - name: Publish Pages
         id: deployment
+        continue-on-error: true
         uses: actions/deploy-pages@v5
         with:
+          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+          timeout: '600000'
+
+      - name: Allow artifact metadata to settle before retry
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 10
+      - name: Retry Pages publication after artifact indexing
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v5
+        with:
+          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
           timeout: '600000'
