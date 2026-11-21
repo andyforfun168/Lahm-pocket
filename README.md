@@ -6,7 +6,18 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.6">V29.6 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.7">V29.7 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+
+## V29.7 照料轻松一点，把日子好好收藏
+
+- 更轻松的日常照料：降低饱食、水分与洁净的自然消耗，调整旅行、阅读、上课和打工的消耗；已有活动保留原账单。
+- 想进一步减少出游消耗，可在「小屋设置」关闭「偶尔自己去旅行」，想出门时再手动安排。
+- 新增日子、小纸条与旅行见闻收藏；日子可手动收藏100条，旅行见闻20张，成长纪念另外保留。
+- 更新小屋主题入口，完善田园手记、帆布背包、星灯游戏厅和庄园画面，经典小屋保留原有风格。
+- 更新超级与神力拉姆动作，改善初级、中级物品互动衔接；整理动作名称与台词，保留各体色的性格与诗词趣味。
+- 修复普通旅行误触发飞行见闻，以及快速关窗再开小剧场卡在准备中的问题。
+
+[阅读完整更新公告 →](docs/releases/RELEASE-v29.7.md) · [发布与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.7)
 
 ## V29.6 精致小屋与旅行更新
 
