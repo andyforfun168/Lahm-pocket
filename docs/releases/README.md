@@ -6,7 +6,7 @@
 
 | 版本 | 图文公告 | 发布与下载 |
 | --- | --- | --- |
-| V29.7.1 | [一周七天的小黑板](RELEASE-v29.7.1.md) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.7.1) |
+| V29.7.1 | [黑板、照料说明与手记修订](RELEASE-v29.7.1.md) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.7.1) |
 | V29.7 | [照料、收藏与小屋主题修订](RELEASE-v29.7.md) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.7) |
 | V29.6 | [精致小屋与旅行更新](../../README.md#v296-精致小屋与旅行更新) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.6) |
 | V29.5.1 | [小屋动画修复](../../README.md#v2951-小屋动画修复) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.5.1) |
