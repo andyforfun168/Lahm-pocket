@@ -6,7 +6,16 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.7">V29.7 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.7.1">V29.7.1 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+
+## V29.7.1 一周七天的小黑板
+
+- 今日特价加入七日田园粉笔画，凌晨 4 点换新，一周七天不重样。
+- 半价吊牌紧跟英文标题，换新时间固定在「今日特价」下方，完善窄屏与大字号排版。
+- 法术结业课程统一使用蓝色「当小助教」按钮；法术可回小屋「小本领」查看。
+- 法术课程明细换上羊皮纸与红黑手写文字，保留已有活动与玩家选择的主题。
+
+[阅读 V29.7.1 更新公告 →](docs/releases/RELEASE-v29.7.1.md) · [发布与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.7.1)
 
 ## V29.7 照料轻松一点，把日子好好收藏
 
