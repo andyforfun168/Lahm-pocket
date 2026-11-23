@@ -6,7 +6,16 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.7.1">V29.7.1 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.7.2">V29.7.2 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+
+## V29.7.2 照料数值与弹窗修补
+
+- 恢复物品效果、活动消耗与参与门槛的数值显示，方便安排日常照料。
+- 仅旅行走偏、回礼与见闻出现概率继续使用自然描述，时间、价格、数量及收集进度保留。
+- 精致小屋照料弹窗与背包统一为奶油纸卡、虚线边框与配套按钮。
+- 保留图标提前加载优化、火红水蓝木绿的法术课程重点色，以及原有存档与活动。
+
+[阅读 V29.7.2 更新公告 →](docs/releases/RELEASE-v29.7.2.md) · [发布与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.7.2)
 
 ## V29.7.1 一周七天的小黑板
 
