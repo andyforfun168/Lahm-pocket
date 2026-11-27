@@ -6,6 +6,7 @@
 
 | 版本 | 图文公告 | 发布与下载 |
 | --- | --- | --- |
+| V29.8 | [成长加速与旅行小路](RELEASE-v29.8.md) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.8) |
 | V29.7.2 | [照料数值与弹窗修补](RELEASE-v29.7.2.md) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.7.2) |
 | V29.7.1 | [黑板、照料说明与手记修订](RELEASE-v29.7.1.md) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.7.1) |
 | V29.7 | [照料、收藏与小屋主题修订](RELEASE-v29.7.md) | [发布页](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.7) |
