@@ -6,7 +6,16 @@
 
 <p align="center"><a href="https://andyforfun168.github.io/Lahm-pocket/"><img src="docs/media/start-game.svg" alt="开始游戏" width="260" height="58"></a></p>
 
-<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.7.2">V29.7.2 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+<p align="center"><a href="https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.8">V29.8 更新与下载</a>　 ·　 <a href="docs/player-guide.md">手机安装与更新</a>　 ·　 <a href="docs/releases/README.md">历代更新</a></p>
+
+## V29.8 多攒下的成长，提前一点长大
+
+- 手记新增手动「成长加速」：每20点溢出成长值抵扣1小时健康陪伴，每阶段最多缩短25%，确认后才扣除。
+- 旅行改走其他小路时，提示原选地点、实际去向和拉姆改变主意的小缘由。
+- 成长加速弹窗跟随手记纸纹、手写字与体色配色。
+- 保留旧存档和已有进度，加强重复点击、刷新与多窗口下的兑换保护。
+
+[阅读 V29.8 更新公告 →](docs/releases/RELEASE-v29.8.md) · [发布与下载 →](https://github.com/andyforfun168/Lahm-pocket/releases/tag/v29.8)
 
 ## V29.7.2 照料数值与弹窗修补
 
